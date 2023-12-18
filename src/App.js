@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Section from './Components/Section';
 import Services from './Components/Services';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
 
     <Navbar/>
     
-    <Stack direction={'column'} spacing={35}>
+    <Stack direction={'column'} spacing={5}>
         <Section/>
         <Services/>
+        <Footer/>
     </Stack>
 
    </Box>
