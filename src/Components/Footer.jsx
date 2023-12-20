@@ -43,7 +43,7 @@ const Footer = () => {
                 </Grid> 
 
                 <Grid sx={{marginLeft: {xs: '0px' , sm: '60px'}}} item>
-                    <Input sx={{position:'relative' , top: {xs : -60, sm: '120px'} , left: {xs: 18 , sm:-396} , bgcolor: 'white' , borderRadius: '10px' , height: '55px' , width: {xs:'290px' , sm:'300px'} , padding: '10px'}}  
+                    <Input sx={{position:'relative' , top: {xs : -60, sm: '120px'} , left: {xs: 18 , sm:-396} , bgcolor: 'white' , borderRadius: '10px' , height: '55px' , width: {xs:'300px' , sm:'300px'} , padding: '10px'}}  
              startAdornment = {<Mail sx={{margin: '5px'}}/>} endAdornment={<Button sx={{bgcolor: '#0b151d' , color: 'white' , padding: '8px 25px' , borderRadius: '10px' , '&:hover' : {bgcolor: '#7F56DA'} , width: '120px'}}>Search</Button>}
             placeholder='Enter your email' disableUnderline
                     ></Input>
