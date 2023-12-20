@@ -1,85 +1,25 @@
-import { Button , Grid, Input , Typography } from '@mui/material'
+import { Box, Button , Grid, Input , Typography } from '@mui/material'
 import React from 'react'
 import TSP from '../Assets/TSP Logo.jpg'
 import { Mail } from '@mui/icons-material'
+import FTLG from '../Assets/3d rendering of people avatars in a zoom call.png'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import styled from '@emotion/styled'
+
+const Icon = styled(Grid)(()=>({
+    display: "flex",
+    gap: "15px",
+    alignItems: "center",
+    justifyContent:'center'
+}));
 
 const Footer = () => {
   return (
     <>
-        {/* <Box>
-            <Card sx={{bgcolor: 'black' , position: 'relative' , top: '250px'}}>
-            
-            <Stack direction="row" spacing={9}>
-            <Stack direction={'column'} spacing={0} color={'white'} justifyContent={'space-between'}>
+            <Grid bgcolor={'#323131'} container spacing={3} sx={{ width: '100%' , height: {xs: '600px'  , sm:'300px'} , position: 'relative' , top: '280px' ,color: 'white'}}>
 
-                <ListItem>
-                
-                    <ListItemText><h3>Company</h3></ListItemText>
-                
-                </ListItem>
-                
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>About us</h6></ListItemText>
-                
-                </ListItem>
-
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>Why Choose us</h6></ListItemText>
-                
-                </ListItem>
-
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>Pricing</h6></ListItemText>
-                
-                </ListItem>
-
-            </Stack>
-
-            <Stack direction={'column'} spacing={0} color={'white'} justifyContent={'space-between'}>
-
-                <ListItem>
-                
-                    <ListItemText><h3>Resources</h3></ListItemText>
-                
-                </ListItem>
-                
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>About us</h6></ListItemText>
-                
-                </ListItem>
-
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>Why Choose us</h6></ListItemText>
-                
-                </ListItem>
-
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>Pricing</h6></ListItemText>
-                
-                </ListItem>
-
-                <ListItem>
-                
-                    <ListItemText><h6 style={{textAlign:'center'}}>Pricing</h6></ListItemText>
-                
-                </ListItem>
-
-            </Stack>
-            </Stack>
-
-            </Card>
-        </Box>   */}
-
-        {/* <Container sx={{position: 'relative' , top: '280px' ,color: 'white'}} > */}
-            <Grid bgcolor={'#323131'} container spacing={3} sx={{ width: '100%' , height: {xs: '800px'  , sm:'300px'} , position: 'relative' , top: '280px' ,color: 'white'}}>
-
-                <Grid display={'flex'} margin={'50px 10px'} justifyContent={'center'} item xs={12} sm={6} md={4} lg={3} >
+                <Grid sx={{display: {xs: 'none' , sm: 'block'}}} display={'flex'} margin={'70px 20px'} justifyContent={'center'}>
                     <img src={TSP} alt='' width={'150px'} height={'150px'} style={{borderRadius: '50%'}}></img>
                 </Grid>
 
@@ -103,18 +43,23 @@ const Footer = () => {
                 </Grid> 
 
                 <Grid sx={{marginLeft: {xs: '0px' , sm: '60px'}}} item>
-                    <Input sx={{position:'relative' , top: {xs : -32, sm: '-150px'} , left: {xs: 18 , sm:779} , bgcolor: 'white' , borderRadius: '10px' , height: '55px' , width: {xs:'290px' , sm:'300px'} , padding: '10px'}}  
+                    <Input sx={{position:'relative' , top: {xs : -60, sm: '120px'} , left: {xs: 18 , sm:-396} , bgcolor: 'white' , borderRadius: '10px' , height: '55px' , width: {xs:'290px' , sm:'300px'} , padding: '10px'}}  
              startAdornment = {<Mail sx={{margin: '5px'}}/>} endAdornment={<Button sx={{bgcolor: '#0b151d' , color: 'white' , padding: '8px 25px' , borderRadius: '10px' , '&:hover' : {bgcolor: '#7F56DA'} , width: '120px'}}>Search</Button>}
             placeholder='Enter your email' disableUnderline
                     ></Input>
                 </Grid>
 
-                <Grid margin={'50px 10px'} item>
-                    <img src={TSP} alt='' width={'90px'} height={'90px'} style={{borderRadius: '50%'}}></img>
+                <Grid sx={{display: {xs: 'none' , sm: 'block'}}} margin={'50px 10px'} item>
+                    <img src={FTLG} alt='' style={{position: 'relative' , left: '1150px' ,bottom: '320px'}} width={'290px'} height={'180px'}></img>
                 </Grid>
 
             </Grid>
-        {/* </Container> */}
+
+            <Typography color={'white'} position={'relative'} fontWeight={'bolder'} top={'300px'} textAlign={'center'}>Copyright @ 2023 : - The Stallion Project</Typography>
+            <Icon>
+            <LinkedInIcon sx={{position: 'relative' , top: '280px' , color: 'white'}}/>
+            <InstagramIcon sx={{position: 'relative' , top: '280px' , color: 'white'}}/>
+            </Icon>
 
     </>
   )
