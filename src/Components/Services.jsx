@@ -8,6 +8,7 @@ const Cdf1 = styled('div')({
   '@media (max-width: 768px)': {
     width: '100%',
   },
+  width: '100%x'
 })
 
 const Services = () => {
@@ -15,8 +16,8 @@ const Services = () => {
     <>
     
       <Cdf1>
-      <div style={{background: 'rgba(170.20, 166.94, 166.94, 0.10)' , position: 'relative' , top: '250px'}}>
-      <Card sx={{ display: 'flex' , bgcolor: 'transparent'}}>
+      <div style={{background: 'rgba(170.20, 166.94, 166.94, 0.10)' , position: 'relative' , top: '250px' , width: '100%'}}>
+      <Card sx={{ display: 'flex' , bgcolor: 'transparent' , width: '100%'}}>
       <CardMedia
         component="img"
         sx={{width: {xs: '400px', sm:'400px'} , height: {xs: '230px',sm:'330px'} , margin: 5 , display: {

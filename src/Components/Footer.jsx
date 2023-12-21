@@ -19,7 +19,7 @@ const Footer = () => {
     <>
             <Grid bgcolor={'#323131'} container spacing={3} sx={{ width: '100%' , height: {xs: '600px'  , sm:'300px'} , position: 'relative' , top: '280px' ,color: 'white'}}>
 
-                <Grid sx={{display: {xs: 'none' , sm: 'block'}}} display={'flex'} margin={'70px 20px'} justifyContent={'center'}>
+                <Grid sx={{display: {xs: 'none' , sm: 'block'} , position: 'relative' , left: '20px'}} display={'flex'} margin={'70px 20px'} justifyContent={'center'}>
                     <img src={TSP} alt='' width={'150px'} height={'150px'} style={{borderRadius: '50%'}}></img>
                 </Grid>
 
@@ -49,16 +49,12 @@ const Footer = () => {
                     ></Input>
                 </Grid>
 
-                <Grid sx={{display: {xs: 'none' , sm: 'block'}}} margin={'50px 10px'} item>
-                    <img src={FTLG} alt='' style={{position: 'relative' , left: '1150px' ,bottom: '320px'}} width={'290px'} height={'180px'}></img>
-                </Grid>
-
             </Grid>
 
             <Typography color={'white'} position={'relative'} fontWeight={'bolder'} top={'300px'} textAlign={'center'}>Copyright @ 2023 : - The Stallion Project</Typography>
             <Icon>
-            <LinkedInIcon sx={{position: 'relative' , top: '280px' , color: 'white'}}/>
-            <InstagramIcon sx={{position: 'relative' , top: '280px' , color: 'white'}}/>
+            <LinkedInIcon sx={{position: 'relative' , top: '330px' , color: 'white'}}/>
+            <InstagramIcon sx={{position: 'relative' , top: '330px' , color: 'white'}}/>
             </Icon>
 
     </>

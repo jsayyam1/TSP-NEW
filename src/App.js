@@ -4,6 +4,10 @@ import Navbar from './Components/Navbar';
 import Section from './Components/Section';
 import Services from './Components/Services';
 import Footer from './Components/Footer';
+import OurTeam from './Components/OurTeam';
+import Contact from './Components/Contact';
+import DragonTalksPage from './Components/DragonTalks';
+import MarketSavvyPage from './Components/MarketSavvy';
 
 function App() {
   return (
@@ -12,11 +16,18 @@ function App() {
 
     <Navbar/>
     
-    <Stack direction={'column'} spacing={5}>
+    {/* <Stack direction={'column'} spacing={5}>
         <Section/>
         <Services/>
         <Footer/>
-    </Stack>
+    </Stack> */}
+
+    {/* <OurTeam/> */}
+
+    {/* <Contact/> */}
+    {/* <DragonTalksPage/> */}
+    {/* <MarketSavvyPage/> */}
+
 
    </Box>
    </>

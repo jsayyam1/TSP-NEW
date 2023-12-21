@@ -22,6 +22,10 @@ const Type = styled(Typography)({
 
 const Navbar = () => {
 
+  const handleClick = () =>
+  {
+    window.location.href = '/OurTeam'
+  }
   
   const[open,setOpen] = useState(false)
 
@@ -34,7 +38,7 @@ const Navbar = () => {
               </>
               <List sx={{display:{xs:"none" , sm: "block"}}}>
                 <Type component={"span"}>Home</Type>
-                <Type component={"span"}>Our Team</Type>
+                <Type onClick={handleClick} component={"span"}>Our Team</Type>
                 <Type component={"span"}>Dragon Talks</Type>
                 <Type component={"span"}>Stock Gyrations</Type>
                 <Type component={"span"}>Market Savvy</Type>
