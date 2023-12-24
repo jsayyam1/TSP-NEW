@@ -10,9 +10,10 @@ import Linked from '../Assets/LINKEDIN ICON.png'
 import Brand from '../Assets/TSP Branding.png'
 
 const Contact = () => {
+
   return (
     <Stack direction={'row'} spacing={3} justifyContent={'space-between'}>
-        <Box sx={{position: 'relative' , top:'150px' , color: 'white' , left: '200px'}} flex={4} p={2}>
+        <Box sx={{position: 'relative' , top:'150px' , color: 'white' , left: '200px' , display: {xs: 'none' , sm: 'block'}}} flex={4} p={2}>
             <img src={Calling} alt=""/>
             <h2>Lets discuss</h2>
             <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
@@ -49,7 +50,7 @@ const Contact = () => {
             </div>
         </Box>
 
-        <Box sx={{position: 'relative' , top:'150px'}} flex={4} p={2}>
+        <Box sx={{position: 'relative' , top:{xs: '100px' , sm: '150px'} , scale: {xs: '0.65' , sm: '1'} , left: {xs: '-200px' , sm: '0px'}}} flex={4} p={2}>
         <div className="right_frame">
            <div className="tsp">
             <img className="d" src={Brand} alt="" width="500px" height="140px" style={{margin: "15px"}}></img>
@@ -80,7 +81,7 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <button className="btn">Send Message</button>
+                        <button type='submit' className="btn">Send Message</button>
                         <a href="./Landing_Page.html" class="hpg">Go to Homepage</a>
                     </div>
 
@@ -92,6 +93,7 @@ const Contact = () => {
 
         </div>
         </Box>
+
     </Stack>
   )
 }

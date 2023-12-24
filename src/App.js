@@ -8,6 +8,7 @@ import OurTeam from './Components/OurTeam';
 import Contact from './Components/Contact';
 import DragonTalksPage from './Components/DragonTalks';
 import MarketSavvyPage from './Components/MarketSavvy';
+import StockGyrationsPage from './Components/StockGyrations';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
     {/* <Contact/> */}
     {/* <DragonTalksPage/> */}
     {/* <MarketSavvyPage/> */}
-
+    {/* <StockGyrationsPage/> */}
 
    </Box>
    </>
