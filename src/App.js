@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material';
+import { Box, Stack, Switch } from '@mui/material';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Section from './Components/Section';
@@ -9,6 +9,7 @@ import Contact from './Components/Contact';
 import DragonTalksPage from './Components/DragonTalks';
 import MarketSavvyPage from './Components/MarketSavvy';
 import StockGyrationsPage from './Components/StockGyrations';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -17,18 +18,23 @@ function App() {
 
     <Navbar/>
     
-    {/* <Stack direction={'column'} spacing={5}>
-        <Section/>
-        <Services/>
-        <Footer/>
-    </Stack> */}
+    <Stack direction={'column'} spacing={5}>
 
-    {/* <OurTeam/> */}
+      <Routes>
+      <Route exact path="/" element= {<Services/>} />
+      </Routes>
 
-    {/* <Contact/> */}
-    {/* <DragonTalksPage/> */}
-    {/* <MarketSavvyPage/> */}
-    {/* <StockGyrationsPage/> */}
+    </Stack>
+
+    <Routes>
+
+          <Route path="/OurTeam" element= {<OurTeam/>} />
+          <Route path="/DragonTalksPage" element= {<DragonTalksPage/>} />
+          <Route path="/StockGyrationsPage" element= {<StockGyrationsPage/>} />
+          <Route path="/MarketSavvyPage" element= {<MarketSavvyPage/>}  />
+          <Route path="/Contact" element= {<Contact/>}  />
+      
+    </Routes>
 
    </Box>
    </>

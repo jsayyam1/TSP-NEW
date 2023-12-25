@@ -3,6 +3,8 @@ import React from 'react'
 import img from '../Assets/image-removebg-preview (3) 1.png'
 import styled from '@emotion/styled'
 import Q24H from '../Assets/24-hours.png'
+import Section from './Section'
+import Footer from './Footer'
 
 const Cdf1 = styled('div')({
   '@media (max-width: 768px)': {
@@ -14,7 +16,8 @@ const Cdf1 = styled('div')({
 const Services = () => {
   return (
     <>
-    
+
+      <Section></Section>
       <Cdf1>
       <div style={{background: 'rgba(170.20, 166.94, 166.94, 0.10)' , position: 'relative' , top: '250px' , width: '100%'}}>
       <Card sx={{ display: 'flex' , bgcolor: 'transparent' , width: '100%'}}>
@@ -87,6 +90,7 @@ const Services = () => {
       />
       </Card>
       </div>  
+      <Footer/>
     </>
   )
 }

@@ -3,6 +3,7 @@ import { AppBar, Avatar, Button, List, Menu, MenuItem, Toolbar, Typography } fro
 import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from "../Assets/TSP Logo.jpg"
+import { Link } from 'react-router-dom';
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -21,11 +22,6 @@ const Type = styled(Typography)({
 })
 
 const Navbar = () => {
-
-  const handleClick = () =>
-  {
-    window.location.href = '/OurTeam'
-  }
   
   const[open,setOpen] = useState(false)
 
@@ -33,17 +29,17 @@ const Navbar = () => {
     <>
         <AppBar>
             <StyledToolbar>
-              <>
               <Avatar sx={{height:"60px" , width:"60px"}} src={Logo} />
-              </>
+
               <List sx={{display:{xs:"none" , sm: "block"}}}>
-                <Type component={"span"}>Home</Type>
-                <Type onClick={handleClick} component={"span"}>Our Team</Type>
-                <Type component={"span"}>Dragon Talks</Type>
-                <Type component={"span"}>Stock Gyrations</Type>
-                <Type component={"span"}>Market Savvy</Type>
+                <Link style={{textDecoration: 'none' , color: 'white'}} to={'/'}><Type component={"span"}>Home</Type></Link>
+                <Link style={{textDecoration: 'none' , color: 'white'}} to={'/OurTeam'}><Type component={"span"}>Our Team</Type></Link>
+                <Link style={{textDecoration: 'none' , color: 'white'}} to={'/DragonTalksPage'}><Type component={"span"}>Dragon Talks</Type></Link>
+                <Link style={{textDecoration: 'none' , color: 'white'}} to={'/StockGyrationsPage'}><Type component={"span"}>Stock Gyrations</Type></Link>
+                <Link style={{textDecoration: 'none' , color: 'white'}} to={'/MarketSavvyPage'}><Type component={"span"}>Market Savvy</Type></Link>
               </List>
-              <Button sx={{padding: "10px 30px" , borderRadius: "10px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"}}} variant='contained'>Contact Us</Button>
+              
+              <Link to={'/Contact'}><Button sx={{padding: "10px 30px" , borderRadius: "10px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"}}} variant='contained'>Contact Us</Button></Link>
               <MenuIcon sx={{display:{xs:"block" , sm:"none"}}} onClick={()=> setOpen(true)}/>
             </StyledToolbar>
             
@@ -56,11 +52,12 @@ const Navbar = () => {
                   vertical: 'top',
                   horizontal: 'right',
                 }}>
-                <MenuItem>Home</MenuItem>
-                <MenuItem>Our Team</MenuItem>
-                <MenuItem>Dragon Talks</MenuItem>
-                <MenuItem>Stock Gyrations</MenuItem>
-                <MenuItem>Market Savvy</MenuItem>
+                <Link style={{textDecoration: 'none' , color: 'black'}} to={'/'}><MenuItem>Home</MenuItem></Link>
+                <Link style={{textDecoration: 'none' , color: 'black'}} to={'/OurTeam'}><MenuItem>Our Team</MenuItem></Link>
+                <Link style={{textDecoration: 'none' , color: 'black'}} to={'/DragonTalksPage'}><MenuItem>Dragon Talks</MenuItem></Link>
+                <Link style={{textDecoration: 'none' , color: 'black'}} to={'/StockGyrationsPage'}><MenuItem>Stock Gyrations</MenuItem></Link>
+                <Link style={{textDecoration: 'none' , color: 'black'}} to={'/MarketSavvyPage'}><MenuItem>Market Savvy</MenuItem></Link>
+                <Link style={{textDecoration: 'none' , color: 'black'}} to={'/Contact'}><MenuItem>Contact Us</MenuItem></Link>
             </Menu>
 
         </AppBar>
