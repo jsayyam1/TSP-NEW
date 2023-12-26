@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Aboutus from './mssections';
 import styled from '@emotion/styled';
-import BG from '../Assets/marketsavvybg.png';
+import BG from '../Assets/MARKET_LOGO.jpg';
 
 const PageContainer = styled.div({
   display: 'flex',

@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Aboutus from './dgsections';
 import styled from '@emotion/styled';
-import BG from '../Assets/dragontalksbg.png';
+import BG from '../Assets/DRAG_LOGO.jpg';
 
 const PageContainer = styled.div({
   display: 'flex',
