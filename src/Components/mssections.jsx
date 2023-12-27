@@ -35,7 +35,7 @@ const MarketServices = () => {
             <span style={{color: '#b99eff'}}>About</span> Us
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          The approach to digital marketing mastery is very unique and different. At this market savvy, we aim to improve your business and grow with it. We believe that working together hand-in-hand is the way forward. “Your network is your networth”, is the Moto we live by. Helping you achieve this Moto is one of the foundations of MarketSavvy. <br></br> <br></br> To achieve mastery we engage in a very different and unique pathway. Our team studies your business and market conditions, getting out the best budget friendly outcome. Our unique SM3 package does the work for us. We offer social media management and marketing along with a detailed statistical analysis.
           </Typography>
         </CardContent>
       </Box>

@@ -35,7 +35,7 @@ const Services = () => {
             <span style={{color: '#b99eff'}}>About</span> Us
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          The Stallion Project(TSP) is a new- age business consultancy and incubation space where we help young entrepreneurs find a path to success. Unlike other consultancy firms, TSP is solely committed to the success of its clients. We at TSP work with a unique business model where we don't charge money from our clients! Rather we get personally involved in the success of the company by taking small equity! We at TSP are also highly invested into creating and expanding new-age E-businesses under our company. If you feel like you have an idea that's unique, then TSP will help you get on the path of making your idea a reality
           </Typography>
         </CardContent>
       </Box>
