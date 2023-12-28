@@ -9,6 +9,7 @@ import FB from '../Assets/FB ICON.png'
 import Linked from '../Assets/LINKEDIN ICON.png'
 import Brand from '../Assets/TSP Branding.png'
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
 
@@ -20,7 +21,8 @@ const Contact = () => {
       emailjs.sendForm('service_urygq98', 'template_5toihln', form.current, 'JhY339hk-jJGezTXP')
         .then((result) => {
             console.log(result.text);
-            window.location.href = 'Contact.jsx';
+            window.location.href = <Link to={'/Services'}></Link>;
+            alert("Mail Submitted Successfully")
         }, (error) => {
             console.log(error.text);
         });
