@@ -26,6 +26,13 @@ const Contact = () => {
         }, (error) => {
             console.log(error.text);
         });
+
+        emailjs.sendForm('service_urygq98', 'template_ok92hlu', form.current, 'JhY339hk-jJGezTXP')
+        .then((result) => {
+            console.log("Success");
+        }, (error) => {
+            console.log(error.text);
+        });
     };
 
   return (

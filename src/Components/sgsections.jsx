@@ -34,7 +34,8 @@ const StockGyrations = () => {
             <span style={{color: '#b99eff'}}>About</span> Us
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          👉 Our purpose at Stock Gyrations is to enable people to attain their financial 💰 goals by comprehending the true nature of finance. <br></br><br></br>
+          👉 We provide financial education as a high priority, making sure that each financial choice is in line with your goals 💯
           </Typography>
         </CardContent>
       </Box>
@@ -51,7 +52,7 @@ const StockGyrations = () => {
             <p>Our <span style={{color: 'white'}}>Journey</span> to unveil the world of finance</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          ✅ We encourage you to join us as we begin this thrilling journey to help shape the financial future. Keep an 🕵️‍♂️ out for upcoming announcements as we have a number of ground-breaking projects planned to transform the way you manage, grow, and safeguard your wealth.
           </Typography>
         </CardContent>
       </Box>
@@ -90,9 +91,7 @@ const StockGyrations = () => {
           <p>Innovating<span style={{color: 'white'}}> Financial Insight </span>and strategy</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt elementum ipsum ac scelerisque. Cras sed odio ac nibh iaculis pretium. Fusce sit amet quam odio. Vivamus vel augue facilisis, sagittis arcu eu, interdum nulla. Maecenas tincidunt magna sapien, et sodales lorem maximus ac. 
-          Curabitur feugiat posuere ligula, sit amet ullamcorper ligula commodo eu. Praesent dignissim ullamcorper lorem eu hendrerit. Suspendisse at ligula fermentum, vestibulum enim lobortis, finibus diam
-          Quisque tincidunt pulvinar orci quis sagittis.
+          At Stock Gyrations, we're reshaping financial success through innovation. Leveraging cutting-edge technology, we deliver real-time insights and personalized strategies tailored to your unique financial goals. Our commitment to financial education ensures you make informed decisions, empowering you on your wealth-building journey. With a proactive approach to risk management, we mitigate uncertainties, providing a secure financial environment. At Stock Gyrations, innovation isn't just a goal—it's our foundation for revolutionizing the way you approach and achieve financial success. Join us on this transformative journey toward your financial aspirations.
           </Typography>
         </CardContent>
       </Box>
@@ -108,7 +107,7 @@ const StockGyrations = () => {
             <p>Connect with <span style={{color: 'white'}}>Stock Gyrations</span> for financial excellence</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Connect with Stock Gyrations for unparalleled financial excellence. We leverage cutting-edge technology and personalized strategies to align with your unique goals. Our commitment to financial education empowers you to make informed decisions. With proactive risk management, we ensure a secure path to financial success. Join us at Stock Gyrations and redefine your journey towards financial excellence.
           </Typography>
         </CardContent>
       </Box>

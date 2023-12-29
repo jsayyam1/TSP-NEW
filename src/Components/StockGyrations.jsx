@@ -54,8 +54,8 @@ const StockGyrationsPage = () => {
         </OverlayText>
       </ImageContainer>
       <Aboutus />
+      <Footer/>
 
-      <Footer />
 
       
     </PageContainer>
