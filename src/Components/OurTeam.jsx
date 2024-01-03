@@ -3,7 +3,7 @@ import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import img from '../Assets/IMG-20231228-WA0017.jpg'
 import img1 from '../Assets/IMG-20231228-WA0016.jpg'
-import img2 from '../Assets/3d rendering of people avatars in a zoom call pt2.png'
+import img2 from '../Assets/Sayyam_Jain.jpg'
 import Footer from './Footer'
 
 const Cdf1 = styled('div')({
@@ -52,7 +52,7 @@ const OurTeam = () => {
             <CardMedia
               component="img"
               sx={{
-                width: { xs: '400px', sm: '400px' }, height: { xs: '230px', sm: '330px' }, margin: 5, display: {
+                width: { xs: '300px', sm: '300px' }, height: { xs: '230px', sm: '330px' }, margin: 5, display: {
                   xs: 'none', // Hide on extra small screens
                   sm: 'block', // Show on small screens and above
                 },
@@ -65,7 +65,7 @@ const OurTeam = () => {
                   <span style={{ color: '#b99eff' }}>Sayyam</span> Jain
                 </Typography>
                 <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Meet Sayyam Jain, the strategic mastermind driving operational excellence at our company. With a keen eye for efficiency and a passion for innovation, Sayyam dynamically looks for operations, ensuring seamless execution and sustainable growth. Apart from an entrepreneur Sayyam is a professional cricketer, a vivid reader and a blog writer
                 </Typography>
               </CardContent>
             </Box>
@@ -99,7 +99,7 @@ const OurTeam = () => {
           </Card>
         </div>
       </Cdf1>
-
+      
       <Footer/>
     </>
   )

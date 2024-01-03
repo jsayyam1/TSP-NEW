@@ -52,7 +52,7 @@ const MarketServices = () => {
             <p>Our <span style={{color: 'white'}}>Approach</span> to marketing mastery</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          The approach to digital marketing mastery is very unique and different. At this market savvy, we aim to improve your business and grow with it. We believe that working together hand-in-hand is the way forward. “Your network is your networth”, is the Moto we live by. Helping you achieve this Moto is one of the foundations of MarketSavvy.
           </Typography>
         </CardContent>
       </Box>
@@ -91,9 +91,7 @@ const MarketServices = () => {
           <p><span style={{color: 'white'}}>Program </span> Highlights</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt elementum ipsum ac scelerisque. Cras sed odio ac nibh iaculis pretium. Fusce sit amet quam odio. Vivamus vel augue facilisis, sagittis arcu eu, interdum nulla. Maecenas tincidunt magna sapien, et sodales lorem maximus ac. 
-          Curabitur feugiat posuere ligula, sit amet ullamcorper ligula commodo eu. Praesent dignissim ullamcorper lorem eu hendrerit. Suspendisse at ligula fermentum, vestibulum enim lobortis, finibus diam
-          Quisque tincidunt pulvinar orci quis sagittis.
+          Discover the unparalleled advantages of Market Savvy's unique approach to digital marketing mastery. Our program stands out with a collaborative ethos, aiming to enhance your business and foster mutual growth. With "Your network is your networth" as our guiding motto, we work hand-in-hand with you to achieve unprecedented success. Dive into our innovative SM3 package, where our team meticulously studies your business and market conditions to deliver budget-friendly solutions. From comprehensive social media management to detailed statistical analysis, our program highlights redefine the landscape of digital marketing.
           </Typography>
         </CardContent>
       </Box>
@@ -109,7 +107,7 @@ const MarketServices = () => {
             <p>Explore our <span style={{color: 'white'}}>Marketing Insights</span></p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Embark on a journey of discovery with Market Savvy's insightful approach to marketing. Our team delves deep into your business and market dynamics to extract the most impactful insights. With a commitment to providing unique perspectives, our marketing insights pave the way for informed decision-making. Uncover the power of our SM3 package, offering not just social media management and marketing but also a meticulous statistical analysis. Explore a new realm of possibilities as you navigate the dynamic landscape of digital marketing with Market Savvy.
           </Typography>
         </CardContent>
       </Box>
@@ -148,9 +146,7 @@ const MarketServices = () => {
           <p>Ready to Elevate your<span style={{color: 'white'}}> Marketing Game</span></p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt elementum ipsum ac scelerisque. Cras sed odio ac nibh iaculis pretium. Fusce sit amet quam odio. Vivamus vel augue facilisis, sagittis arcu eu, interdum nulla. Maecenas tincidunt magna sapien, et sodales lorem maximus ac. 
-          Curabitur feugiat posuere ligula, sit amet ullamcorper ligula commodo eu. Praesent dignissim ullamcorper lorem eu hendrerit. Suspendisse at ligula fermentum, vestibulum enim lobortis, finibus diam
-          Quisque tincidunt pulvinar orci quis sagittis.
+          Are you prepared to elevate your marketing game to new heights? Market Savvy is your partner in this transformative journey. Our collaborative ethos, guided by the mantra "Your network is your networth," ensures a synchronized approach to success. The unique SM3 package, a cornerstone of our methodology, optimizes social media management and marketing while providing in-depth statistical analysis. Ready to soar above the competition? Market Savvy is here to redefine and elevate your marketing game, unlocking a future of unparalleled success for your business.
           </Typography>
         </CardContent>
       </Box>

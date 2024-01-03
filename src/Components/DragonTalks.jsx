@@ -43,7 +43,7 @@ const DragonTalksPage = () => {
         <img
           src={BG}
           alt="Dragon Talks"
-          style={{ width: '100%', height: 'auto' }}
+          style={{ width: '100%', height: 'auto', opacity: '0.4' }}
         />
         <OverlayText>
           <p style={{ fontWeight: 'bolder' }}>

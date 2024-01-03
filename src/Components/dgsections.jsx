@@ -34,7 +34,7 @@ const Services = () => {
             <span style={{color: '#b99eff'}}>About</span> Us
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          At Dragon Talks, we cultivate a vibrant and supportive atmosphere dedicated to refining your public speaking prowess. Led by seasoned trainers, our program covers essential facets such as body language, voice modulation, and presentation structure. Gain skills to engage audiences, conquer nerves, and adeptly handle challenging queries. <br></br><br></br> Our commitment extends beyond the professional realm—we believe learning should be enjoyable. Balancing informativeness and entertainment, our program facilitates connections among participants, fostering a community where experiences are shared, and insights are gained. <br></br><br></br> Embrace a collaborative spirit as you interact with like-minded individuals, drawing inspiration from their triumphs and overcoming challenges together. At Dragon Talks, we redefine the learning experience by infusing enjoyment into every session. <br></br> And, of course, relish the thrill of delivering impactful presentations that captivate and resonate. With Dragon Talks, turning that vision into reality becomes second nature. Join us in creating a fun, supportive environment where you can truly become the best public speaker you aspire to be! 🚀
           </Typography>
         </CardContent>
       </Box>
@@ -51,7 +51,7 @@ const Services = () => {
             <p>Our <span style={{color: 'white'}}>Approach</span> to public speaking mastery</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          At Dragon Talks, we craft a unique approach to public speaking mastery, emphasizing a blend of skill development and a supportive atmosphere. Our experienced trainers lead you through the fundamentals, covering essential aspects like body language, voice modulation, and presentation structure. We go beyond the basics, teaching you to engage your audience, conquer nervousness, and adeptly navigate challenging questions. Through our distinctive blend of professional guidance and an enjoyable learning environment, Dragon Talks ensures you become the best public speaker you can be, making your journey to mastery both rewarding and empowering.
           </Typography>
         </CardContent>
       </Box>
@@ -90,7 +90,7 @@ const Services = () => {
           <p>Unlock financial wisdom: Check out Dragon Talks'<span style={{color: 'white'}}> Session Schedule!</span> </p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Embark on a journey to unlock financial wisdom with Dragon Talks! Explore our session schedule designed to provide insights not only into public speaking mastery but also financial acumen. Our diverse sessions cover topics that bridge the gap between effective communication and financial intelligence. Join us to discover the intersection of eloquence and financial wisdom, setting the stage for a well-rounded and empowered professional journey. Check out our schedule and seize the opportunity to enhance both your speaking skills and financial knowledge with Dragon Talks.
           </Typography>
         </CardContent>
       </Box>
@@ -106,7 +106,7 @@ const Services = () => {
             <p>Get in <span style={{color: 'white'}}>Touch</span></p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ready to embark on a transformative journey with Dragon Talks? Connect with us to discover how our dynamic programs can elevate your public speaking skills and financial wisdom. Whether you're an aspiring speaker or someone seeking valuable financial insights, our team is here to guide you. Reach out, and let's explore the possibilities together. Get in touch with Dragon Talks, where your path to becoming a confident public speaker and gaining financial wisdom begins.
           </Typography>
         </CardContent>
       </Box>

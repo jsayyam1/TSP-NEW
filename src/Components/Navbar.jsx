@@ -17,8 +17,7 @@ const Type = styled(Typography)({
   fontWeight: "bold",
   fontSize: "22px",
   padding: "5px",
-  '&:hover': "scale(2.5)",
-  cursor: "pointer"
+  cursor: "pointer",
 })
 
 const Navbar = () => {
@@ -31,7 +30,7 @@ const Navbar = () => {
             <StyledToolbar>
               <Avatar sx={{height:"60px" , width:"60px"}} src={Logo} />
 
-              <List sx={{display:{xs:"none" , sm: "block"}}}>
+              <List sx={{display:{xs:"none" , sm: "block" ,  '&:hover': {transform: 'scale(1.065)' , transition: '0.5s'}}}}>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/'}><Type component={"span"}>Home</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/OurTeam'}><Type component={"span"}>Our Team</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/DragonTalksPage'}><Type component={"span"}>Dragon Talks</Type></Link>
