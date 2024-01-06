@@ -52,7 +52,7 @@ const DragonTalksPage = () => {
             <p style={{ color: '#b99eff' }}>with Dragon Talks</p>
           </p>
         </OverlayText>
-      </ImageContainer>
+      </ImageContainer> 
       <Aboutus />
 
       <Footer />

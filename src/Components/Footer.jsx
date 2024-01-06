@@ -14,6 +14,14 @@ const Icon = styled(Grid)(()=>({
     justifyContent:'center'
 }));
 
+const handleLinkedInClick = () => {
+    window.open('https://www.linkedin.com/', '_blank');
+  };
+
+  const handleInstagramClick = () => {
+    window.open('https://www.instagram.com/thestallionproject/', '_blank');
+  };
+
 const Footer = () => {
   return (
     <>
@@ -53,8 +61,15 @@ const Footer = () => {
 
             <Typography color={'white'} position={'relative'} fontWeight={'bolder'} top={'300px'} textAlign={'center'}>Copyright @ 2023 : - The Stallion Project</Typography>
             <Icon>
-            <LinkedInIcon sx={{position: 'relative' , top: '330px' , color: 'white'}}/>
-            <InstagramIcon sx={{position: 'relative' , top: '330px' , color: 'white'}}/>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" onClick={handleLinkedInClick}>
+                <LinkedInIcon sx={{ position: 'relative', top: '330px', color: 'white' }} />
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" onClick={handleInstagramClick}>
+                <InstagramIcon sx={{ position: 'relative', top: '330px', color: 'white' }} />
+            </a>
+
             </Icon>
 
     </>

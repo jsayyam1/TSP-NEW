@@ -55,7 +55,7 @@ const MarketSavvyPage = () => {
       </ImageContainer>
       <Aboutus />
 
-      <Footer />
+      <Footer class='abc' />
 
       
     </PageContainer>

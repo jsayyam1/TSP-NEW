@@ -26,6 +26,7 @@ function App() {
 
     </Stack>
 
+    <Stack direction={'column'} spacing={5}>
     <Routes>
 
           <Route path="/OurTeam" element= {<OurTeam/>} />
@@ -35,6 +36,7 @@ function App() {
           <Route path="/Contact" element= {<Contact/>}  />
       
     </Routes>
+    </Stack>
 
    </Box>
    </>
