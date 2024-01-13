@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import React, { useRef } from 'react'
 import Calling from '../Assets/3d rendering of people avatars in a zoom call.png' 
 import Emails from '../Assets/clarity_email-solid.png'
@@ -114,7 +114,7 @@ const Contact = () => {
 
                     <div>
                         <button type='submit' className="btn">Send Message</button>
-                        <a href="./Landing_Page.html" class="hpg">Go to Homepage</a>
+                        {/* <Link to={'/Services'}><Typography>Go to Homepage</Typography></Link> */}
                     </div>
 
                 </form>
