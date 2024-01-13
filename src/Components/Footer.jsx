@@ -6,6 +6,7 @@ import FTLG from '../Assets/3d rendering of people avatars in a zoom call.png'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 const Icon = styled(Grid)(()=>({
     display: "flex",
@@ -42,7 +43,7 @@ const Footer = () => {
                     <Typography variant='h4' sx={{textAlign: 'center',margin: '15px' , paddingBottom: '20px '}}>Resources</Typography>
                     <Typography variant='h6' sx={{textAlign: 'center' , fontSize: '12px' , fontWeight: 'bold' , margin: '15px' , paddingBottom: '10px'}} >Privacy Policy</Typography>
                     <Typography variant='h6' sx={{textAlign: 'center' , fontSize: '12px' , fontWeight: 'bold' , margin: '15px' , paddingBottom: '10px'}} >Terms and Conditions</Typography>
-                    <Typography variant='h6' sx={{textAlign: 'center' , fontSize: '12px' , fontWeight: 'bold' , margin: '15px' , paddingBottom: '10px'}} >Contact Us</Typography>
+                    <Link style={{textDecoration: 'none' , color: 'white'}} to={'/Contact'}><Typography variant='h6' sx={{textAlign: 'center' , fontSize: '12px' , fontWeight: 'bold' , margin: '15px' , paddingBottom: '10px'}} >Contact Us</Typography></Link>
                 </Grid> 
 
                 <Grid sx={{marginLeft: {xs: '0px' , sm: '60px'}}} item>
