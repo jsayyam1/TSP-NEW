@@ -47,9 +47,9 @@ const DragonTalksPage = () => {
         />
         <OverlayText>
           <p style={{ fontWeight: 'bolder' }}>
-            <p style={{ color: 'white' }}>Unleash</p>
-            <p style={{ color: 'white' }}>your inner dragon &nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p style={{ color: '#b99eff' }}>with Dragon Talks</p>
+            <p style={{ color: 'white' }}>Unleash your inner dragon &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p style={{ color: 'white' }}></p>
+            <p style={{ color: '#b99eff' }}>with Dragon Talks !!</p>
           </p>
         </OverlayText>
       </ImageContainer> 

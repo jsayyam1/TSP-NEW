@@ -47,9 +47,9 @@ const MarketSavvyPage = () => {
         />
         <OverlayText>
           <p style={{ fontWeight: 'bolder' }}>
-            <p style={{ color: 'white' }}>Elevate</p>
-            <p style={{ color: 'white' }}>your marketing skills &nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p style={{ color: '#b99eff' }}>with Market Savvy</p>
+            <p style={{ color: 'white' }}>Elevate your marketing skills &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p style={{ color: 'white' }}></p>
+            <p style={{ color: '#b99eff' }}>with Market Savvy !!</p>
           </p>
         </OverlayText>
       </ImageContainer>

@@ -55,19 +55,19 @@ const Services = () => {
                   <Grid sx={{color: 'white'}} item>
                     <img src={Q24H} height={'50px'} width={'50px'} alt=""/>
                     <span style={{fontWeight: 'bold' , position:'relative' , left: '20px' , bottom: '18px'}} >Consultancy</span>
-                    <Typography sx={{margin: '18px 5px'}} >Our prime focus relies on the consultancy services such as Finance planning, PR planning, digital marketing and Social media management.</Typography>
+                    <Typography sx={{margin: '18px 5px'}} >Our consultancy services are designed to empower businesses with strategic planning in key areas. From meticulous finance planning to impactful PR strategies, we specialize in providing comprehensive solutions. Our expertise extends to the dynamic realm of digital marketing, where we craft campaigns that resonate with your target audience. Social media management is another forte, ensuring a strong online presence and engagement.</Typography>
                   </Grid>
 
                   <Grid sx={{color: 'white'}} item>
                     <img src={Q24H} height={'50px'} width={'50px'} alt=""/>
                     <span style={{fontWeight: 'bold' , position:'relative' , left: '20px' , bottom: '18px'}} >Incubation Space</span>
-                    <Typography sx={{margin: '18px 5px'}} >We firmly believe that investing in new-age startups could bring mutual growth and hence we provide incubation space and invest in our client's business in returns of a few percentage of equity.</Typography>
+                    <Typography sx={{margin: '18px 5px'}} >Embracing innovation, we offer incubation space for budding startups. Recognizing the potential for mutual growth, we not only provide physical infrastructure but also invest in our client's ventures, forging a partnership that goes beyond conventional support. In return for our investment, we acquire a percentage of equity, aligning our interests with the success of the startups we nurture.</Typography>
                   </Grid>
 
                   <Grid sx={{color: 'white'}} item>
                     <img src={Q24H} height={'50px'} width={'50px'} alt=""/>
                     <span style={{fontWeight: 'bold' , position:'relative' , left: '20px' , bottom: '18px'}} >Digital Marketing</span>
-                    <Typography sx={{margin: '18px 5px'}} >End to End digital marketing services and Social Media Management Services</Typography>
+                    <Typography sx={{margin: '18px 5px'}} >Our end-to-end digital marketing services are tailored to elevate your brand in the digital landscape. From crafting compelling content to implementing SEO strategies, we cover all facets of online visibility. Social media management is a cornerstone of our approach, ensuring your brand's voice is amplified across various platforms, fostering engagement and building a loyal audience.</Typography>
                   </Grid>
 
           </Grid>

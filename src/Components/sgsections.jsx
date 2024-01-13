@@ -34,8 +34,8 @@ const StockGyrations = () => {
             <span style={{color: '#b99eff'}}>About</span> Us
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          👉 Our purpose at Stock Gyrations is to enable people to attain their financial 💰 goals by comprehending the true nature of finance. <br></br><br></br>
-          👉 We provide financial education as a high priority, making sure that each financial choice is in line with your goals 💯
+          Our purpose at Stock Gyrations is to enable people to attain their financial goals by comprehending the true nature of finance. <br></br><br></br>
+          We provide financial education as a high priority, making sure that each financial choice is in line with your goals
           </Typography>
         </CardContent>
       </Box>
@@ -52,7 +52,7 @@ const StockGyrations = () => {
             <p>Our <span style={{color: 'white'}}>Journey</span> to unveil the world of finance</p> 
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-          ✅ We encourage you to join us as we begin this thrilling journey to help shape the financial future. Keep an 🕵️‍♂️ out for upcoming announcements as we have a number of ground-breaking projects planned to transform the way you manage, grow, and safeguard your wealth.
+          We encourage you to join us as we begin this thrilling journey to help shape the financial future. Keep an eye out for upcoming announcements as we have a number of ground-breaking projects planned to transform the way you manage, grow, and safeguard your wealth.
           </Typography>
         </CardContent>
       </Box>

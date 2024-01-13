@@ -47,9 +47,9 @@ const StockGyrationsPage = () => {
         />
         <OverlayText>
           <p style={{ fontWeight: 'bolder' }}>
-            <p style={{ color: 'white' }}>Empowering</p>
-            <p style={{ color: 'white' }}>financial prosperity &nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p style={{ color: '#b99eff' }}>with Stock Gyrations</p>
+            <p style={{ color: 'white' }}>Empowering financial prosperity &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p style={{ color: 'white' }}></p>
+            <p style={{ color: '#b99eff' }}>with Stock Gyrations !!</p>
           </p>
         </OverlayText>
       </ImageContainer>
