@@ -18,6 +18,11 @@ const Type = styled(Typography)({
   fontSize: "22px",
   padding: "5px",
   cursor: "pointer",
+  transition: '0.5s',
+  ":hover": {
+    fontSize: '24px', 
+    color: 'rgb(185 , 158 , 254)',
+  },
 })
 
 const Navbar = () => {
@@ -30,7 +35,7 @@ const Navbar = () => {
             <StyledToolbar>
               <Avatar sx={{height:"60px" , width:"60px"}} src={Logo} />
 
-              <List sx={{display:{xs:"none" , sm: "block" ,  '&:hover': {transform: 'scale(1.065)' , transition: '0.5s'}}}}>
+              <List sx={{display:{xs:"none" , sm: "block"}}}>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/'}><Type component={"span"}>Home</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/OurTeam'}><Type component={"span"}>Our Team</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/DragonTalksPage'}><Type component={"span"}>Dragon Talks</Type></Link>
@@ -38,7 +43,7 @@ const Navbar = () => {
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/MarketSavvyPage'}><Type component={"span"}>Market Savvy</Type></Link>
               </List>
               
-              <Link to={'/Contact'}><Button sx={{padding: "10px 30px" , borderRadius: "10px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"}}} variant='contained'>Contact Us</Button></Link>
+              <Link style={{textDecoration: 'none'}} to={'/Contact'}><Button sx={{padding: "10px 30px" , borderRadius: "10px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"} , ":hover": {fontSize: '15px',transition: '0.3s',}}} variant='contained'>Contact Us</Button></Link>
               <MenuIcon sx={{display:{xs:"block" , sm:"none"}}} onClick={()=> setOpen(true)}/>
             </StyledToolbar>
             
