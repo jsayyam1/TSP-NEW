@@ -40,7 +40,8 @@ const Navbar = () => {
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/OurTeam'}><Type component={"span"}>Our Team</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/DragonTalksPage'}><Type component={"span"}>Dragon Talks</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/StockGyrationsPage'}><Type component={"span"}>Stock Gyrations</Type></Link>
-                <Link style={{textDecoration: 'none' , color: 'white'}} to={'/MarketSavvyPage'}><Type component={"span"}>Market Savvy</Type></Link>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={'/MarketSavvyPage'}><Type component={"span"}>Market Savvy</Type></Link>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={'/Payments'}><Type component={"span"}>Payments</Type></Link>
               </List>
               
               <Link style={{textDecoration: 'none'}} to={'/Contact'}><Button sx={{padding: "10px 30px" , borderRadius: "10px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"} , ":hover": {fontSize: '15px',transition: '0.3s',}}} variant='contained'>Contact Us</Button></Link>

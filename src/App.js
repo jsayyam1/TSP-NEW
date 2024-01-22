@@ -11,6 +11,7 @@ import OurTeam from './Components/OurTeam';
 import Contact from './Components/Contact';
 import DragonTalksPage from './Components/DragonTalks';
 import MarketSavvyPage from './Components/MarketSavvy';
+import Payments from './Components/Payments';
 import StockGyrationsPage from './Components/StockGyrations';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
@@ -40,7 +41,9 @@ function App() {
             <Route path="/DragonTalksPage" element={<DragonTalksPage />} />
             <Route path="/StockGyrationsPage" element={<StockGyrationsPage />} />
             <Route path="/MarketSavvyPage" element={<MarketSavvyPage />} />
+            <Route path="/Payments" element={<Payments />} />
             <Route path="/Contact" element={<Contact />} />
+            
           </Routes>
         </Stack>
       </Box>
