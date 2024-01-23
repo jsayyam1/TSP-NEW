@@ -19,7 +19,7 @@ const Payments = () => {
                 },
                 body: JSON.stringify({
                     userId: 'The Stallion Project', // Replace with actual user ID
-                    amount: 100, // Replace with actual payment amount
+                    amount: 1, // Replace with actual payment amount
                     receiverUpi: yourUpiIdentifier,
                 }),
             });
