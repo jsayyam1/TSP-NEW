@@ -35,7 +35,7 @@ const StockGyrations = () => {
           </Typography>
           <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
           Our purpose at Stock Gyrations is to enable people to attain their financial goals by comprehending the true nature of finance. <br></br><br></br>
-          We provide financial education as a high priority, making sure that each financial choice is in line with your goals
+          We provide financial education as a high priority, making sure that each financial choice is in line with your goals.
           </Typography>
         </CardContent>
       </Box>

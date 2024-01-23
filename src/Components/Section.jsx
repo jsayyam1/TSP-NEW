@@ -66,9 +66,9 @@ const Section = () => {
           
         <Ptag>
         <p style={{fontWeight:"bolder"}}>
-            <p style={{color:"#b99eff"}}>The Best Finance Solutions</p> 
-            <p style={{color:'white'}}>are waiting for you to uplift your &nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p style={{color:'white'}}>company</p>
+            <p style={{color:"#b99eff"}}>We are The Stallion Project</p> 
+            <p style={{color:'white'}}>We are crafting &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p style={{color:'white'}}>#new-age Entrepreneurs</p>
         </p>
         </Ptag>
 

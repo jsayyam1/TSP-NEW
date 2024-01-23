@@ -38,7 +38,7 @@ const OurTeam = () => {
                   <span style={{ color: '#b99eff' }}>Avyay</span> Tandon
                 </Typography>
                 <Typography margin={'20px'} variant="subtitle1" color="white" component="div">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Avyay Tandon (CEO) brings a wealth of experience to help, with a concept of strategic development and commitment to fostering the culture of business. Guided by the vision for the future, he navigates the company throughout the organisation, inspiring every team member to strive for greatness.
                 </Typography>
               </CardContent>
             </Box>
