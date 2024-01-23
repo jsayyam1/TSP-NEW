@@ -26,7 +26,7 @@ app.post('/generate-upi-qr', (req, res) => {
     };
 
     // Generate UPI QR code data (replace with your UPI payment details)
-    const upiQrData = `upi://pay?pa=varrshinie123@okicici&pn=MerchantName&mc=1234&tid=${transactionId}&tr=${transactionId}&tn=PaymentDescription&am=${amount}&cu=INR&url=https://yourwebsite.com/payment-status`;
+    const upiQrData = `upi://pay?pa=8850912626@kotak&pn=8850912626@kotak&mc=0000&tid=${transactionId}&tr=${transactionId}&tn=PaymentDescription&am=${amount}&cu=INR&url=https://yourwebsite.com/payment-status`;
 
     res.json({ transactionId, upiQrData });
 });

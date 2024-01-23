@@ -4,11 +4,12 @@ import { Stack, Box, Button, Typography } from '@mui/material';
 const Payments = () => {
     const [transactionId, setTransactionId] = useState(null);
     const [upiQrData, setUpiQrData] = useState(null);
+    const [qrCodeDisplayed, setQrCodeDisplayed] = useState(false);
 
     const generateUpiQr = async () => {
         // Replace with your actual UPI identifier and API endpoint
         const apiUrl = 'http://localhost:4000/generate-upi-qr';
-        const yourUpiIdentifier = 'varrshinie123@okaxis'; // Replace with your UPI identifier
+        const yourUpiIdentifier = '8850912626@kotak'; // Replace with your UPI identifier
 
         try {
             const response = await fetch(apiUrl, {
@@ -17,7 +18,7 @@ const Payments = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    userId: 'varrshinie', // Replace with actual user ID
+                    userId: 'The Stallion Project', // Replace with actual user ID
                     amount: 100, // Replace with actual payment amount
                     receiverUpi: yourUpiIdentifier,
                 }),
@@ -26,6 +27,7 @@ const Payments = () => {
             const data = await response.json();
             setTransactionId(data.transactionId);
             setUpiQrData(data.upiQrData);
+            setQrCodeDisplayed(true); // Set the flag to display QR code
         } catch (error) {
             console.error('Error generating UPI QR code:', error);
         }
@@ -37,7 +39,7 @@ const Payments = () => {
                 <Typography variant="h4">Choose Payment Method</Typography>
             </Box>
 
-            {transactionId === null && (
+            {!qrCodeDisplayed && transactionId === null && (
                 <Box style={{ display: 'flex', gap: '15px' }}>
                     <Button variant="contained" color="primary" onClick={() => alert('Redirecting to card payment...')}>
                         Pay by Card
@@ -49,10 +51,10 @@ const Payments = () => {
                 </Box>
             )}
 
-            {transactionId && upiQrData && (
+            {qrCodeDisplayed && (
                 <Box style={{ marginTop: '20px' }}>
                     <Typography variant="h6">UPI Transaction ID: {transactionId}</Typography>
-                    {/* Display UPI QR Code (replace with your preferred QR code library) */}
+                    {/* Display UPI QR Code */}
                     <img src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(upiQrData)}`} alt="UPI QR Code" />
                 </Box>
             )}
