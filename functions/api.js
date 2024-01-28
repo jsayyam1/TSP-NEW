@@ -11,7 +11,7 @@ app.use(cors());
 
 const paymentsDatabase = {};
 
-app.post('/generate-upi-qr', (req, res) => {
+app.post('/api/generate-upi-qr', (req, res) => {
     const { userId, amount } = req.body;
     const transactionId = `txn_${Math.random().toString(36).substring(7)}`;
 

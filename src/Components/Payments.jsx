@@ -8,7 +8,10 @@ const Payments = () => {
 
     const generateUpiQr = async () => {
         // Replace with your actual UPI identifier and API endpoint
-        const apiUrl = 'http://localhost:4000/generate-upi-qr';
+        
+        const apiUrl = '/api/generate-upi-qr';
+
+
         const yourUpiIdentifier = '8850912626@kotak'; // Replace with your UPI identifier
 
         try {
