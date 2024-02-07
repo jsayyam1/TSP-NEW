@@ -1,8 +1,7 @@
-import { Box, Button , Grid, Input , Typography } from '@mui/material'
+import { Button , Grid, Input , Typography } from '@mui/material'
 import React from 'react'
 import TSP from '../Assets/TSP Logo.jpg'
 import { Mail } from '@mui/icons-material'
-import FTLG from '../Assets/3d rendering of people avatars in a zoom call.png'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import styled from '@emotion/styled'
