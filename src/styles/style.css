@@ -1,9 +1,9 @@
-/* about us */
 .aboutus-section {
   position: relative;
   top: 250px;
   width: 100%;
   background-color: white;
+  overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
 }
 
 .aboutus-section h1 {
@@ -28,6 +28,73 @@
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  .aboutus-section {
+    top: 100px;
+  }
+
+  .aboutus-grid {
+    grid-template-columns: 1fr; 
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .aboutus-grid .grid {
+    margin-right: 140px;
+    margin-left: 20px;
+  }
+}
+
+/* services */
+
+.ourservices-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 120px;
+  margin-right: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ourservices-grid .service-card {
+  background: #7F56DA;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.25s ease;
+  flex-direction: column;
+  text-align: left;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.ourservices-grid .service-card h1 {
+  font-size: 40px;
+}
+
+.ourservices-grid .service-card p {
+  text-align: justify;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .ourservices-grid {
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .ourservices-grid .service-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 450px;
+  }
+}
 
 /* footer */
 .footer {
@@ -36,6 +103,7 @@
     position: relative;
     top: 220px;
     color: white;
+    overflow: hidden;
   }
   
   .container {
