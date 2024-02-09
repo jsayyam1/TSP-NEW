@@ -12,6 +12,7 @@ import Payments from './Components/Payments';
 import StockGyrationsPage from './Components/StockGyrations';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
+import Services from './Components/Services';
 
 // Replace 'Measurement_Id' with your actual Measurement ID
 ReactGA.initialize('G-HLTBP4WRFD');
@@ -29,7 +30,7 @@ function App() {
         <Navbar />
         <Stack direction={'column'} spacing={5}>
           <Routes>
-            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/" element={<Services/>} />
           </Routes>
         </Stack>
 

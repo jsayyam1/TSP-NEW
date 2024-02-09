@@ -1,17 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/style.css'
 import aboutimg from '../Assets/image-removebg-preview (3) 1.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Section from './Section';
+import Footer from './Footer';
 
 function Services() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
   return (
     <>
+    <Section/>
       <div className='aboutus-section'>
-        <h1>About Us</h1> 
+        <div data-aos="fade-bottom">
+          <h1>About Us</h1> 
+        </div>
         <div className="aboutus-grid">
           <div>
-            <img src={aboutimg} alt="" />
+            <img src={aboutimg} alt="" data-aos="fade-right" />
           </div>
-          <div className='grid'>
+          <div className='grid' data-aos="fade-left">
             <p>
               The Stallion Project (TSP) exemplifies a contemporary business consultancy and incubation center devoted to guiding aspiring 
               entrepreneurs toward success. Unlike conventional firms, TSP wholeheartedly dedicates itself to client triumph. 
@@ -25,9 +37,11 @@ function Services() {
           </div>
         </div>
 
-        <h1>Our Services</h1> 
+        <div data-aos="fade-bottom">
+          <h1>Our Services</h1> 
+        </div>
         <div className='ourservices-grid'>
-          <div className='service-card'>
+          <div className='service-card' data-aos="flip-right">
             <h1>Consultancy</h1>
             <p>
               Our consultancy services are intricately crafted to empower businesses with strategic planning across pivotal domains. 
@@ -36,7 +50,7 @@ function Services() {
               audience. Another forte is social media management, ensuring a robust online presence and fostering engagement.
             </p>
           </div>
-          <div className='service-card'>
+          <div className='service-card' data-aos="flip-right">
             <h1>Incubation Space</h1>
             <p>
               Championing innovation, we extend incubation space to nascent startups. Acknowledging the potential for reciprocal growth, 
@@ -45,7 +59,7 @@ function Services() {
               with the success of the startups we nurture.
             </p>
           </div>
-          <div className='service-card'>
+          <div className='service-card' data-aos="flip-right">
             <h1>Digital Marketing</h1>
             <p>
               Our comprehensive digital marketing services are intricately designed to enhance your brand's presence in the digital realm. 
@@ -56,6 +70,7 @@ function Services() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
