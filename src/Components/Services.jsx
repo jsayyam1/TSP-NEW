@@ -3,8 +3,6 @@ import '../styles/style.css'
 import aboutimg from '../Assets/image-removebg-preview (3) 1.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Section from './Section';
-import Footer from './Footer';
 
 function Services() {
 
@@ -14,7 +12,6 @@ function Services() {
 
   return (
     <>
-    <Section/>
       <div className='aboutus-section'>
         <div data-aos="fade-bottom">
           <h1>About Us</h1> 
@@ -70,7 +67,6 @@ function Services() {
           </div>
         </div>
       </div>
-      <Footer/>
     </>
   )
 }

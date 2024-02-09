@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/style.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import '../styles/footer.css';
 
 const Footer = () => {
 

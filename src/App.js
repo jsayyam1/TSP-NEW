@@ -30,7 +30,7 @@ function App() {
         <Navbar />
         <Stack direction={'column'} spacing={5}>
           <Routes>
-            <Route exact path="/" element={<Services/>} />
+            <Route exact path="/" element={<Home/>} />
           </Routes>
         </Stack>
 
