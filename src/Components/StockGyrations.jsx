@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
 import Aboutus from './sgsections';
 import styled from '@emotion/styled';
 import BG from '../Assets/STOCK_LOGO.jpg';
@@ -53,11 +52,7 @@ const StockGyrationsPage = () => {
           </p>
         </OverlayText>
       </ImageContainer>
-      <Aboutus />
-      <Footer/>
-
-
-      
+      <Aboutus />      
     </PageContainer>
   );
 };

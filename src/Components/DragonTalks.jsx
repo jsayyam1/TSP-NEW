@@ -11,7 +11,7 @@ import dragon4 from '../Assets/dtend.png';
 const PageContainer = styled.div({
   display: 'flex',
   flexDirection: 'column',
-  backgroundColor: '#2c1f4a',
+  // backgroundColor: '#2c1f4a',
 });
 
 const ImageContainer = styled.div({
@@ -130,6 +130,7 @@ const DragonTalksPage = () => {
           </div>
         </div>
       </div>
+      <div style={{marginTop: '-200px'}}></div>
    </>
   );
 };

@@ -37,6 +37,7 @@ const Payments = () => {
     };
 
     return (
+        <>
         <Stack direction="column" spacing={25} alignItems="center">
             <Box>
                 <Typography variant="h4">Choose Payment Method</Typography>
@@ -62,6 +63,7 @@ const Payments = () => {
                 </Box>
             )}
         </Stack>
+        </>
     );
 };
 

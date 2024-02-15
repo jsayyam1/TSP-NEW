@@ -1,23 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/ourteam.css'
 import img1 from '../Assets/IMG-20231228-WA0016.jpg'
 import img2 from '../Assets/Sayyam_Jain.jpg'
 import img3 from '../Assets/IMG-20231228-WA0017.jpg'
-import Footer from './Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function OurTeam() {
+
+    useEffect(() => {
+        AOS.init({duration: 2000});
+      }, []);
+
   return (
   <React.Fragment>
-
-<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@700&family=Sarala:wght@700&family=Sen&display=swap"
-    rel="stylesheet"></link>
-
 <section id="ourteam-container">
-    <h1 className="h-primary space">With pride, we unveil our formidable and goal-oriented team!</h1>
+    <h1 style={{color: 'black', textAlign: 'center'}}>With pride, we unveil our formidable and goal-oriented team!</h1>
 
     <div id="ourteam">
 
-        <div className="box">
+        <div className="box" data-aos="flip-right">
             <div className="img-box">
                 <img src={img1} alt="teammember1-img"></img>
             </div>
@@ -35,7 +37,7 @@ function OurTeam() {
         </div>
 
 
-        <div className="box">
+        <div className="box" data-aos="flip-right">
             <div className="img-box">
                 <img src={img2} alt="teammember2-img"></img>
             </div>
@@ -53,7 +55,7 @@ function OurTeam() {
         </div>
 
 
-        <div className="box">
+        <div className="box" data-aos="flip-right">
             <div className="img-box">
                 <img src={img3} alt="teammember3-img"></img>
             </div>
@@ -70,7 +72,7 @@ function OurTeam() {
         </div>
     </div>
 </section>
-<Footer/>
+<div style={{marginTop: '-200px'}}></div>
 </React.Fragment>
 
   )

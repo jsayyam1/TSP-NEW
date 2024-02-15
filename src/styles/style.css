@@ -7,11 +7,12 @@
   left: 120px;
 }
 
-.container p {
+.container .age {
   color: white;
   font-size: 30px;
   margin-right: 380px;
   margin-top: -20px;
+  font-weight: bold;
 }
 
 .search-box {
@@ -19,7 +20,7 @@
 }
 
 .main-text {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
   color: white;
   max-width: 1500px;
@@ -31,7 +32,7 @@
   transition: 0.8s;
   transform: rotateX( 0deg ) rotateY( 0deg ) rotateZ( 0deg );
   white-space: nowrap;
-  margin-left: 80px;
+  margin-left: -240px;
 }
 
 @media (max-width: 768px) {

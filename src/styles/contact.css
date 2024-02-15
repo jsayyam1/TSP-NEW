@@ -1,0 +1,29 @@
+.contact-main {
+    background-color: white;
+}
+
+.contact-main .contact-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.contact-main .contact-grid h1 {
+    font-size: 40px;
+}
+
+.contact-main .contact-grid a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.contact-main .contact-grid i {
+    width: 10px;
+    height: 10px;
+}
+
+.icon {
+    font-size: 30px;
+}

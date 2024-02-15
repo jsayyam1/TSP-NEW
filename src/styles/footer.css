@@ -4,7 +4,11 @@
     position: relative;
     top: 220px;
   }
-  
+
+  .footer .grid-footer .container .footer-text {
+    color: white;
+  }
+
   .container {
     display: flex;
     align-items: center;

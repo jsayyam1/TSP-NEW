@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Stack } from '@mui/material'
 import React, { useRef } from 'react'
 import Calling from '../Assets/3d rendering of people avatars in a zoom call.png' 
 import Emails from '../Assets/clarity_email-solid.png'
@@ -36,97 +36,99 @@ const Contact = () => {
     };
 
   return (
+    <>
     <Stack direction={'row'} spacing={3} justifyContent={'space-between'}>
 
-        <Box sx={{position: 'relative' , top: '150px' , color:'white' , display: {xs: 'block' , sm: 'none'} , left: {xs: '100px'} , width: '1500px'}}>
-        <img style={{position: 'relative' , right: '40px'}} src={Calling} width={250} height={160} alt=""/>
-            <h2>Lets discuss</h2>
-            <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
-            <h2>together</h2>
-        </Box>
+<Box sx={{position: 'relative' , top: '150px' , color:'white' , display: {xs: 'block' , sm: 'none'} , left: {xs: '100px'} , width: '1500px'}}>
+<img style={{position: 'relative' , right: '40px'}} src={Calling} width={250} height={160} alt=""/>
+    <h2>Lets discuss</h2>
+    <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
+    <h2>together</h2>
+</Box>
 
-        <Box sx={{position: 'relative' , top:'150px' , color: 'white' , left: '200px' , display: {xs: 'none' , sm: 'block'}}} flex={4} p={2}>
-            <img src={Calling} alt=""/>
-            <h2>Lets discuss</h2>
-            <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
-            <h2>together</h2>
+<Box sx={{position: 'relative' , top:'150px' , color: 'white' , left: '200px' , display: {xs: 'none' , sm: 'block'}}} flex={4} p={2}>
+    <img src={Calling} alt=""/>
+    <h2>Lets discuss</h2>
+    <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
+    <h2>together</h2>
 
-            <div className='abcd'>
-            <div className="details_email">
+    <div className='abcd'>
+    <div className="details_email">
 
-                <img src={Emails} alt="" height="20px" width="20px" style={{margin: "-5px 10px"}}></img>
-                <span style={{color: 'white'}}>thestallionproject@gmail.com</span>
+        <img src={Emails} alt="" height="20px" width="20px" style={{margin: "-5px 10px"}}></img>
+        <span style={{color: 'white'}}>thestallionproject@gmail.com</span>
 
-                
-            </div>
-            <br />
-            <div className="details_contact">
-                
-                <img src= {Call}  alt="" height="20px" width="20px" style={{margin: "-5px 10px"}}></img>
-                <span style={{color: "white"}}>+91 8104917371</span>
-                
-            </div>
-            <br />
-            <div className="details_location">
+        
+    </div>
+    <br />
+    <div className="details_contact">
+        
+        <img src= {Call}  alt="" height="20px" width="20px" style={{margin: "-5px 10px"}}></img>
+        <span style={{color: "white"}}>+91 8104917371</span>
+        
+    </div>
+    <br />
+    <div className="details_location">
 
-                <img src={Location} alt="" height="20px" width="20px" style={{margin: "-5px 10px"}}></img>
-                <span style={{color: "white"}}>Mumbai , MH</span>
+        <img src={Location} alt="" height="20px" width="20px" style={{margin: "-5px 10px"}}></img>
+        <span style={{color: "white"}}>Mumbai , MH</span>
 
-            </div>
-            </div>
+    </div>
+    </div>
 
-            <div className="socials" style={{display: 'flex' , gap: '2rem' , justifyContent: 'center' ,alignItems: 'center' , marginTop: '60px'}}>
-                <a href="https://www.facebook.com" target="_blank"><img src={FB} alt=""></img></a>
-                <a href="https://www.instagram.com/thestallionproject/" target="_blank"><img src={Insta} alt=""></img></a>
-                <a href="https://www.linkedin.com" target="_blank"><img src={Linked} alt=""></img></a>
-            </div>
-        </Box>
+    <div className="socials" style={{display: 'flex' , gap: '2rem' , justifyContent: 'center' ,alignItems: 'center' , marginTop: '60px'}}>
+        <a href="https://www.facebook.com" target="_blank"><img src={FB} alt=""></img></a>
+        <a href="https://www.instagram.com/thestallionproject/" target="_blank"><img src={Insta} alt=""></img></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src={Linked} alt=""></img></a>
+    </div>
+</Box>
 
-        <Box sx={{position: 'relative' , top:{xs: '350px' , sm: '150px'} , scale: {xs: '0.65' , sm: '1'} , left: {xs: '-450px' , sm: '0px'}}} flex={4} p={2}>
-        <div className="right_frame">
-           <div className="tsp">
-            <img className="d" src={Brand} alt="" width="500px" height="140px" style={{margin: "15px"}}></img>
+<Box sx={{position: 'relative' , top:{xs: '350px' , sm: '150px'} , scale: {xs: '0.65' , sm: '1'} , left: {xs: '-450px' , sm: '0px'}}} flex={4} p={2}>
+<div className="right_frame">
+   <div className="tsp">
+    <img className="d" src={Brand} alt="" width="500px" height="140px" style={{margin: "15px"}}></img>
 
-            <div className="contact_form">
-                <form ref={form} onSubmit={sendEmail} className="ct-form">
+    <div className="contact_form">
+        <form ref={form} onSubmit={sendEmail} className="ct-form">
 
-                    <div className="name">
-                    
-                    <input className="name" type="text" name="name" id="name" placeholder="Name"></input>   
-                    </div>
-
-                    <div className="contact">
-                  
-                    <input className="contact" type="text" name="contact" id="contact" placeholder="Contact"></input>
-                    </div>
-
-
-                    <div className="email">
-                    
-                    <input className="email" type="text" name="email" id="email" placeholder="Email"></input>
-                    </div>
-
-
-                    <div className="message">
-                    
-                    <input className="message" type="text" name="message" id="message" placeholder="Message"></input>
-                    </div>
-
-                    <div>
-                        <button type='submit' className="btn">Send Message</button>
-                        {/* <Link to={'/Services'}><Typography>Go to Homepage</Typography></Link> */}
-                    </div>
-
-                </form>
-
+            <div className="name">
+            
+            <input className="name" type="text" name="name" id="name" placeholder="Name"></input>   
             </div>
 
-           </div>
+            <div className="contact">
+          
+            <input className="contact" type="text" name="contact" id="contact" placeholder="Contact"></input>
+            </div>
 
-        </div>
-        </Box>
 
-    </Stack>
+            <div className="email">
+            
+            <input className="email" type="text" name="email" id="email" placeholder="Email"></input>
+            </div>
+
+
+            <div className="message">
+            
+            <input className="message" type="text" name="message" id="message" placeholder="Message"></input>
+            </div>
+
+            <div>
+                <button type='submit' className="btn">Send Message</button>
+                {/* <Link to={'/Services'}><Typography>Go to Homepage</Typography></Link> */}
+            </div>
+
+        </form>
+
+    </div>
+
+   </div>
+
+</div>
+</Box>
+
+</Stack>
+    </>
   )
 }
 

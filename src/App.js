@@ -12,7 +12,7 @@ import Payments from './Components/Payments';
 import StockGyrationsPage from './Components/StockGyrations';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
-import Services from './Components/Services';
+import Footer from './Components/Footer';
 
 // Replace 'Measurement_Id' with your actual Measurement ID
 ReactGA.initialize('G-HLTBP4WRFD');
@@ -31,20 +31,22 @@ function App() {
         <Stack direction={'column'} spacing={5}>
           <Routes>
             <Route exact path="/" element={<Home/>} />
-          </Routes>
-        </Stack>
-
-        <Stack direction={'column'} spacing={5}>
-          <Routes>
             <Route path="/OurTeam" element={<OurTeam />} />
             <Route path="/DragonTalksPage" element={<DragonTalksPage />} />
             <Route path="/StockGyrationsPage" element={<StockGyrationsPage />} />
             <Route path="/MarketSavvyPage" element={<MarketSavvyPage />} />
             <Route path="/Payments" element={<Payments />} />
             <Route path="/Contact" element={<Contact />} />
-            
           </Routes>
         </Stack>
+        <Footer/>
+{/* 
+        <Stack direction={'column'} spacing={5}>
+          <Routes>
+            
+            
+          </Routes>
+        </Stack> */}
       </Box>
     </>
   );

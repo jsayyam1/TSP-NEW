@@ -1,14 +1,12 @@
 import styled from '@emotion/styled';
 import { Box, Button, Input, Stack } from '@mui/material';
 import { motion } from 'framer-motion'; // Import motion from framer-motion
-import React, { useEffect } from 'react';
+import React from 'react';
 import myImage from '../Assets/col-md-6.png';
 import Savvy from '../Assets/market_savyy.png';
 import Stock from '../Assets/tsg.png';
 import Dragon from '../Assets/dt.png';
 import '../styles/style.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const TiltedImg = motion.img; 
 
@@ -61,19 +59,13 @@ const Fielder = styled('fieldset')({
 });
 
 const Section = () => {
-
-  useEffect(() => {
-    AOS.init({duration: 2000});
-  }, []);
-
-
   return (
     <>
       <Box className="background">
         <Stack direction={'row'} spacing={2} justifyContent={'space-between'}>
-          <div className='container' data-aos="fade-right">
-            <h1 className='main-text'>The Stallion Project</h1>
-            <p>We create #new-age entrepreneur</p>
+          <div className='container'>
+            <p className='main-text'> We Are The Stallion Project</p>
+            <p className='age'>We create #new-age entrepreneur</p>
           </div>
 
           <Img
