@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid-footer">
           <div className='container'>
             <img src={Logo} alt="" className='tsp-img' />
-            <h1>The Stallion Project</h1>
+            <h1 className='footer-text'>The Stallion Project</h1>
           </div>
           <div className="footer-pages">
             <Link to="/" className='link'>Home</Link>

@@ -59,6 +59,7 @@ const DragonTalksPage = () => {
           </OverlayText>
         </ImageContainer> 
       </PageContainer>
+      <div style={{ backgroundColor: 'white' }}>
       <h1 align="center">About Us</h1>
         <div className="dragon-grid" style={{marginLeft: '120px', marginRight: '120px'}}>
           <div>
@@ -128,6 +129,7 @@ const DragonTalksPage = () => {
             <img src={dragon4} alt="" width={400} height={330} style={{marginLeft: '120px'}} />
           </div>
         </div>
+      </div>
    </>
   );
 };

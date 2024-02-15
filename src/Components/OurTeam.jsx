@@ -70,7 +70,6 @@ function OurTeam() {
         </div>
     </div>
 </section>
-
 <Footer/>
 </React.Fragment>
 

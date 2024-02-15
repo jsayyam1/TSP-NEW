@@ -8,9 +8,9 @@ body{
 /* Our Team */
 #ourteam-container {
     margin-top: 70px;
+    background-color: white;
 }
 #ourteam {
-    background-color: #2C1F4A   ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
