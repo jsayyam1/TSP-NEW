@@ -14,7 +14,7 @@ function Services() {
     <>
       <div className='aboutus-section'>
         <div data-aos="fade-bottom">
-          <h1>About Us</h1> 
+          <h2>About Us</h2> 
         </div>
         <div className="aboutus-grid">
           <div>
