@@ -64,7 +64,7 @@ const Section = () => {
       <Box className="background">
         <Stack direction={'row'} spacing={2} justifyContent={'space-between'}>
           <div className='container'>
-            <p className='main-text'> We Are The Stallion Project</p>
+            <p className='main-text' style={{marginBottom: '60px'}}> We Are The Stallion Project</p>
             <p className='age'>We create #new-age entrepreneur</p>
           </div>
 

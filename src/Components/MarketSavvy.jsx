@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
-// import Footer from './Footer';
-// import Aboutus from './mssections';
 import styled from '@emotion/styled';
 import BG from '../Assets/MARKET_LOGO.jpg';
 import '../styles/mssection.css'
@@ -10,7 +8,8 @@ import img2 from '../Assets/image 18.png'
 import img3 from '../Assets/image 19.png'
 import img4 from '../Assets/image 21.png'
 import img5 from '../Assets/image 22.png'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PageContainer = styled.div({
   display: 'flex',
@@ -42,6 +41,11 @@ const OverlayText = styled.div({
 });
 
 const MarketSavvyPage = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
   return (
     <>
     <PageContainer>
@@ -68,9 +72,10 @@ const MarketSavvyPage = () => {
     
     <div className="box" id="box1">
         <div className="content-container">
-            <img src={img} alt="" className="side-image"></img>
+            <img src={img} alt="" className="side-image" data-aos="fade-right"></img>
             <div className="text-content" style={{marginTop: '-80px'}}>
                 <h2 className="h-primary center">About Us</h2>
+                <div data-aos="fade-left">
                 <p className="center">
                     The approach to digital marketing mastery is very unique and different. At this market savvy, we aim
                     to improve your business and grow with it. We believe that working together hand-in-hand is the way
@@ -81,6 +86,7 @@ const MarketSavvyPage = () => {
                     best budget-friendly outcome. Our unique SM3 package does the work for us. We offer social media
                     management and marketing along with a detailed statistical analysis.
                 </p>
+                </div>
             </div>
         </div>
     </div>
@@ -89,9 +95,10 @@ const MarketSavvyPage = () => {
     
     <div className="box" id="box2">
         <div className="content-container">
-        <img src={img2} alt="" className="side-image"></img>
+        <img src={img2} alt="" className="side-image" data-aos="fade-right"></img>
             <div className="text-content">
                 <h2 className="h-primary center">Our Approach To Marketing Mystery</h2>
+                <div data-aos="fade-left">
                 <p className="center">
                     In the pursuit of digital marketing mastery, MarketSavvy employs a distinctive and innovative
                     approach. Our mission is not only to enhance your business but also to foster its continuous growth.
@@ -101,6 +108,7 @@ const MarketSavvyPage = () => {
                     you in realizing and embodying this guiding principle stands as a cornerstone of our dedication to
                     your success.
                 </p>
+                </div>
             </div>
         </div>
     </div>
@@ -109,9 +117,10 @@ const MarketSavvyPage = () => {
     
     <div className="box" id="box3">
         <div className="content-container">
-        <img src={img3} alt="" className="side-image"></img>
+        <img src={img3} alt="" className="side-image" data-aos="fade-right"></img>
             <div className="text-content">
                 <h2 className="h-primary center">Program Highlights</h2>
+                <div data-aos="fade-left">
                 <p className="center">
                     Discover the unparalleled advantages of Market Savvy's unique approach to digital
                         marketing mastery. Our program stands out with a collaborative ethos, aiming to enhance your
@@ -121,6 +130,7 @@ const MarketSavvyPage = () => {
                         solutions. From comprehensive social media management to detailed statistical analysis, our program
                         highlights redefine the landscape of digital marketing.
                 </p>
+                </div>
             </div>
         </div>
     </div>
@@ -129,9 +139,10 @@ const MarketSavvyPage = () => {
     
     <div className="box" id="box4">
         <div className="content-container">
-        <img src={img4} alt="" className="side-image"></img>
+        <img src={img4} alt="" className="side-image" data-aos="fade-right"></img>
             <div className="text-content">
                 <h2 className="h-primary center">Explore Our Marketing Mystery</h2>
+                <div data-aos="fade-left">
                 <p className="center">
                     Embark on a journey of discovery with Market Savvy's insightful approach to marketing. Our team
                     delves deep into your business and market dynamics to extract the most impactful insights. With a
@@ -140,6 +151,7 @@ const MarketSavvyPage = () => {
                     marketing but also a meticulous statistical analysis. Explore a new realm of possibilities as you
                     navigate the dynamic landscape of digital marketing with Market Savvy.
                 </p>
+                </div>
             </div>
         </div>
     </div>
@@ -147,9 +159,10 @@ const MarketSavvyPage = () => {
     
     <div className="box" id="box5">
         <div className="content-container">
-        <img src={img5} alt="" className="side-image"></img>
+        <img src={img5} alt="" className="side-image" data-aos="fade-right"></img>
             <div className="text-content">
                 <h2 className="h-primary center">Ready To Elevate Your Marketing Game</h2>
+                <div data-aos="fade-left">
                 <p className="center">
                     Are you prepared to elevate your marketing game to new heights? Market Savvy is your partner in this
                         transformative journey. Our collaborative ethos, guided by the mantra "Your network is your
@@ -158,6 +171,7 @@ const MarketSavvyPage = () => {
                         analysis. Ready to soar above the competition? Market Savvy is here to redefine and elevate your
                         marketing game, unlocking a future of unparalleled success for your business.
                 </p>
+                </div>
             </div>
         </div>
     </div>

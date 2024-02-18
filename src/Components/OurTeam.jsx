@@ -15,7 +15,7 @@ function OurTeam() {
   return (
   <React.Fragment>
 <section id="ourteam-container">
-    <h1 style={{color: 'black', textAlign: 'center'}}>With pride, we unveil our formidable and goal-oriented team!</h1>
+    <h1 style={{color: 'black', textAlign: 'center', marginTop: '40px'}}>With pride, we unveil our formidable and goal-oriented team!</h1>
 
     <div id="ourteam">
 

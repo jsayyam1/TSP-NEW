@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import '../styles/dragontalks.css';
 import styled from '@emotion/styled';
@@ -7,6 +7,8 @@ import dragon1 from '../Assets/dtabout.png';
 import dragon2 from '../Assets/dtapproach.png';
 import dragon3 from '../Assets/dtsession.png';
 import dragon4 from '../Assets/dtend.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PageContainer = styled.div({
   display: 'flex',
@@ -39,6 +41,11 @@ const OverlayText = styled.div({
 });
 
 const DragonTalksPage = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
   return (
    <>
       <PageContainer>
@@ -66,9 +73,10 @@ const DragonTalksPage = () => {
 
 <div className="box" id="box1">
     <div className="content-container">
-        <img src={dragon1} alt="" className="side-image"></img>
+        <img src={dragon1} alt="" className="side-image" data-aos="fade-right"></img>
         <div className="text-content" style={{marginTop: '-80px'}}>
             <h2 className="h-primary center">About Us</h2>
+            <div data-aos="fade-left">
             <p className='center'>
                 At Dragon Talks, we cultivate a vibrant and supportive atmosphere dedicated to refining your public speaking prowess. 
                 Led by seasoned trainers, our program covers essential facets such as body language, voice modulation, and presentation 
@@ -82,6 +90,7 @@ const DragonTalksPage = () => {
                   Embrace a collaborative spirit as you interact with like-minded individuals, drawing inspiration from their triumphs and overcoming challenges together. At Dragon Talks, we redefine the learning experience by infusing enjoyment into every session.
                   And, of course, relish the thrill of delivering impactful presentations that captivate and resonate. With Dragon Talks, turning that vision into reality becomes second nature. Join us in creating a fun, supportive environment where you can truly become the best public speaker you aspire to be!
               </p>
+            </div>
         </div>
     </div>
 </div>
@@ -90,9 +99,10 @@ const DragonTalksPage = () => {
 
 <div className="box" id="box2">
     <div className="content-container">
-    <img src={dragon2} alt="" className="side-image"></img>
+    <img src={dragon2} alt="" className="side-image" data-aos="fade-right"></img>
         <div className="text-content">
             <h2 className="h-primary center">Our Approach To Public Speaking Mystery</h2>
+            <div data-aos="fade-left">
             <p className="center">
             At Dragon Talks, we craft a unique approach to public speaking mastery, emphasizing a blend of skill development and a 
              supportive atmosphere. Our experienced trainers lead you through the fundamentals, covering essential aspects like body 
@@ -101,6 +111,7 @@ const DragonTalksPage = () => {
               njoyable learning environment, Dragon Talks ensures you become the best public speaker you can be, making your journey to 
               mastery both rewarding and empowering.
             </p>
+            </div>
         </div>
     </div>
 </div>
@@ -109,9 +120,10 @@ const DragonTalksPage = () => {
 
 <div className="box" id="box3">
     <div className="content-container">
-    <img src={dragon3} alt="" className="side-image"></img>
+    <img src={dragon3} alt="" className="side-image" data-aos="fade-right"></img>
         <div className="text-content">
             <h2 className="h-primary center">Unlock Financial Wisdom</h2>
+            <div data-aos="fade-left">
             <p className="center">
               Embark on a journey to unlock financial wisdom with Dragon Talks! Explore our session schedule designed to provide insights 
               not only into public speaking mastery but also financial acumen. Our diverse sessions cover topics that bridge the gap 
@@ -119,6 +131,7 @@ const DragonTalksPage = () => {
               wisdom, setting the stage for a well-rounded and empowered professional journey. Check out our schedule and seize the 
               opportunity to enhance both your speaking skills and financial knowledge with Dragon Talks.
             </p>
+            </div>
         </div>
     </div>
 </div>
@@ -127,15 +140,17 @@ const DragonTalksPage = () => {
 
 <div className="box" id="box4">
     <div className="content-container">
-    <img src={dragon4} alt="" className="side-image"></img>
+    <img src={dragon4} alt="" className="side-image" data-aos="fade-right"></img>
         <div className="text-content">
             <h2 className="h-primary center">Get In Touch</h2>
+            <div data-aos="fade-left">
             <p className="center">
               Ready to embark on a transformative journey with Dragon Talks? Connect with us to discover how our dynamic programs can 
               elevate your public speaking skills and financial wisdom. Whether you're an aspiring speaker or someone seeking valuable 
               financial insights, our team is here to guide you. Reach out, and let's explore the possibilities together. Get in touch with 
               Dragon Talks, where your path to becoming a confident public speaker and gaining financial wisdom begins.
             </p>
+            </div>
         </div>
     </div>
 </div>
