@@ -73,7 +73,7 @@ const Contact = () => {
 
 
     <div className="socials" style={{ display: 'flex', gap: '2rem', justifyContent: 'center', alignItems: 'center', marginTop: '120px' }}>
-        <a href="https://www.facebook.com" target="_blank" style={{ marginLeft:'-410px',margin: '0 20px', padding: '5px' }}><img src={FB} alt=""></img></a>
+        <a href="https://www.facebook.com" target="_blank" style={{ marginLeft:'-410px',marginRight:'20px', padding: '5px' }}><img src={FB} alt=""></img></a>
         <a href="https://www.instagram.com/thestallionproject/" target="_blank" style={{ margin: '0 20px', padding: '5px' }}><img src={Insta} alt=""></img></a>
         <a href="https://www.linkedin.com" target="_blank" style={{ margin: '0 20px', padding: '5px' }}><img src={Linked} alt=""></img></a>
     </div>
