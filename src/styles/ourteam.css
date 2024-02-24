@@ -44,6 +44,9 @@ body{
     display: block;
     margin: auto;
 }
+#ourteam .box .text-box{
+    padding-top: 40px;
+}
 #ourteam .box p {
     color: white;
     font-size: 1rem;
