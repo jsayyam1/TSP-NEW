@@ -8,10 +8,7 @@ const Payments = () => {
 
     const generateUpiQr = async () => {
         // Replace with your actual UPI identifier and API endpoint
-        
         const apiUrl = '/api/generate-upi-qr';
-
-
         const yourUpiIdentifier = '8850912626@kotak'; // Replace with your UPI identifier
 
         try {
@@ -37,31 +34,47 @@ const Payments = () => {
     };
 
     return (
-        <Stack direction="column" spacing={25} alignItems="center">
-            <Box>
-                <Typography variant="h4">Choose Payment Method</Typography>
-            </Box>
-
-            {!qrCodeDisplayed && transactionId === null && (
-                <Box style={{ display: 'flex', gap: '15px' }}>
-                    <Button variant="contained" color="primary" onClick={() => alert('Redirecting to card payment...')}>
-                        Pay by Card
-                    </Button>
-
-                    <Button variant="contained" color="primary" onClick={generateUpiQr}>
-                        Pay with UPI
-                    </Button>
+        <div style={{ paddingTop: '180px' }}>
+            <Stack direction="column" spacing={20} alignItems="center">
+                <Box>
+                    <Typography variant="h2" style={{ fontFamily: 'Sarala', fontWeight: 'bold', textAlign: 'center' }}>
+                        Choose Payment Method
+                    </Typography>
                 </Box>
-            )}
 
-            {qrCodeDisplayed && (
-                <Box style={{ marginTop: '20px' }}>
-                    <Typography variant="h6">UPI Transaction ID: {transactionId}</Typography>
-                    {/* Display UPI QR Code */}
-                    <img src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(upiQrData)}`} alt="UPI QR Code" />
-                </Box>
-            )}
-        </Stack>
+                {!qrCodeDisplayed && transactionId === null && (
+                    <Box style={{ display: 'flex', gap: '60px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={() => alert('Redirecting to card payment...')}
+                            style={{ width: '200px', height: '50px' }}
+                        >
+                            Credit/Debit Card
+                        </Button>
+
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={generateUpiQr}
+                            style={{ width: '200px', height: '50px' }}
+                        >
+                            Pay with UPI    
+                        </Button>
+                    </Box>
+                )}
+
+                {qrCodeDisplayed && (
+                    <Box style={{ marginTop: '20px' }}>
+                        <Typography variant="h6" style={{ fontFamily: 'Sarala', textAlign: 'center' }}>
+                            UPI Transaction ID: {transactionId}
+                        </Typography>
+                        {/* Display UPI QR Code */}
+                        <img src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(upiQrData)}`} alt="UPI QR Code" />
+                    </Box>
+                )}
+            </Stack>
+        </div>
     );
 };
 
