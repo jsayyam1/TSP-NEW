@@ -40,16 +40,16 @@ const Contact = () => {
 
         <Box sx={{position: 'relative' , top: '150px' , color:'white' , display: {xs: 'block' , sm: 'none'} , left: {xs: '100px'} , width: '1500px'}}>
         <img style={{position: 'relative' , right: '40px'}} src={Calling} width={250} height={160} alt=""/>
-            <h2>Lets discuss</h2>
-            <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
-            <h2>together</h2>
+            <h2>Lets delve into</h2>
+            <h2>an intriguing <span style={{color: '#5AF0C3'}}>conversation</span></h2>
+            <h2>together !</h2>
         </Box>
 
         <Box sx={{position: 'relative' , top:'150px' , color: 'white' , left: '200px' , display: {xs: 'none' , sm: 'block'}}} flex={4} p={2} >
             <img src={Calling} alt=""/>
-            <h2>Lets discuss</h2>
-            <h2>on something <span style={{color: '#5AF0C3'}}>cool</span></h2>
-            <h2>together</h2>
+            <h2>Lets delve into</h2>
+            <h2>an intriguing <span style={{color: '#5AF0C3'}}>conversation</span></h2>
+            <h2>together !</h2>
 
  
 
