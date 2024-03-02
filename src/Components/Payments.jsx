@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Stack, Box, Button, Typography } from '@mui/material';
+import QrCode from 'react-qr-code';
 
 const Payments = () => {
     const [transactionId, setTransactionId] = useState(null);
@@ -18,11 +19,16 @@ const Payments = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    userId: 'The Stallion Project', // Replace with actual user ID
-                    amount: 1, // Replace with actual payment amount
+                    userId: 'The Stallion Project',
+                    amount: 1,
                     receiverUpi: yourUpiIdentifier,
                 }),
             });
+            
+            if (!response.ok) {
+                console.error('Error generating UPI QR code. Status:', response.status);
+                return;
+            }
 
             const data = await response.json();
             setTransactionId(data.transactionId);
@@ -59,20 +65,20 @@ const Payments = () => {
                             onClick={generateUpiQr}
                             style={{ width: '200px', height: '50px' }}
                         >
-                            Pay with UPI    
+                            Pay with UPI
                         </Button>
                     </Box>
                 )}
 
-                {qrCodeDisplayed && (
-                    <Box style={{ marginTop: '20px' }}>
-                        <Typography variant="h6" style={{ fontFamily: 'Sarala', textAlign: 'center' }}>
+                {qrCodeDisplayed && upiQrData && (
+                    <Box style={{ marginTop: '20px', textAlign: 'center' }}>
+                        <Typography variant="h6" style={{ fontFamily: 'Sarala' }}>
                             UPI Transaction ID: {transactionId}
                         </Typography>
-                        {/* Display UPI QR Code */}
-                        <img src={`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(upiQrData)}`} alt="UPI QR Code" />
+                        <QrCode value={upiQrData} />
                     </Box>
                 )}
+
             </Stack>
         </div>
     );
