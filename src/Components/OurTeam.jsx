@@ -5,6 +5,8 @@ import img2 from '../Assets/Sayyam_Jain.jpg'
 import img3 from '../Assets/IMG-20231228-WA0017.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'remixicon/fonts/remixicon.css'
+import Navbar from './Navbar'
 
 function OurTeam() {
 
@@ -14,6 +16,7 @@ function OurTeam() {
 
   return (
   <React.Fragment>
+    <Navbar/>
 <section id="ourteam-container">
     <h1 style={{color: 'black', textAlign: 'center', marginTop: '40px'}}>With pride, we unveil our formidable and goal-oriented team!</h1>
 
@@ -33,6 +36,14 @@ function OurTeam() {
                     strive for excellence in every endeavor. Avyay's transformative leadership enriches our
                     enterprise with extensive expertise and a steadfast commitment to lasting success.
                 </p>
+                <div className='center'>
+                    <a href="https://www.instagram.com/avii.t?igsh=MTZhZ3pobm5mMmN1bQ==" style={{color: 'black'}}>
+                        <i className="ri-instagram-fill" style={{fontSize: 30, color: 'black'}}></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/avyay-tandon-a6a487219?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeQBSm4FzQwSjsLoNW0IZ8w%3D%3D" style={{color: 'black'}}>
+                        <i className="ri-linkedin-box-fill" style={{fontSize: 30, marginLeft: 10, color: 'black'}}></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -52,6 +63,14 @@ function OurTeam() {
                     cricketer, dedicated reader, and prolific blog writer.
                 </p>
             </div>
+            <div className='center'>
+                <a href="https://www.instagram.com/jsay_yam24?igsh=a3kxb2FxNnVrMThi" style={{color: 'black'}}>
+                    <i className="ri-instagram-fill" style={{fontSize: 30}}></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sayyam-jain-29560321a" style={{color: 'black'}}>
+                    <i className="ri-linkedin-box-fill" style={{fontSize: 30, marginLeft: 10}}></i>
+                </a>
+            </div>
         </div>
 
 
@@ -68,6 +87,14 @@ function OurTeam() {
                     excellence and driven by success, I eagerly apply my diverse skills, making meaningful
                     contributions. Embracing challenges as opportunities, I believe success stems from determination
                     and adaptability. Let's collaborate for innovation and growth!</p>
+            </div>
+            <div className='center'>
+                <a href="https://www.instagram.com/thebokaguy?igsh=MmZoYjNucHU3YWNj" style={{color: 'black'}}>
+                    <i className="ri-instagram-fill" style={{fontSize: 30}}></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yashmitra?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsTcwCGgfTMOGoMhuTD5eag%3D%3D" style={{color: 'black'}}>
+                    <i className="ri-linkedin-box-fill" style={{fontSize: 30, marginLeft: 10}}></i>
+                </a>
             </div>
         </div>
     </div>

@@ -3,6 +3,10 @@ body{
     background-color:#2C1F4A   ;
 }
 
+a {
+    text-decoration: none;
+    color: 'black';
+}
 
 
 /* Our Team */
