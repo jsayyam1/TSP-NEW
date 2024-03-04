@@ -27,7 +27,6 @@ function App() {
   return (
     <>
       <Box>
-        <Navbar />
         <Stack direction={'column'} spacing={5}>
           <Routes>
             <Route exact path="/" element={<Home/>} />

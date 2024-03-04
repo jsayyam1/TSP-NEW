@@ -1,31 +1,31 @@
 import styled from '@emotion/styled';
 import { Box, Button, Input, Stack } from '@mui/material';
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { motion } from 'framer-motion'; 
 import React from 'react';
-import myImage from '../Assets/col-md-6.png';
+import myImage from '../Assets/hero_image.png';
 import Savvy from '../Assets/market_savyy.png';
 import Stock from '../Assets/tsg.png';
 import Dragon from '../Assets/dt.png';
 import '../styles/style.css';
+import Navbar from './Navbar';
 
 const TiltedImg = motion.img; 
 
 const Img = styled(TiltedImg)({
   position: 'relative',
   top: 280,
-  right: '140px',
-  height: '400px', 
-  width: '400px',  
+  right: '200px',
+  height: '440px', 
+  width: '440px',  
 
   '@media (max-width: 768px)': {
-    top: 340,
+    top: 500,
     right: '0px',
     width: '250px', 
     height: '250px',
-    left: -320,
+    left: -540,
   },
 });
-
 
 const tiltAnimation = {
   hover: {
@@ -54,18 +54,20 @@ const Fielder = styled('fieldset')({
     alignItems: 'center',
     left: '-50px',
     top: '230px',
-    paddingBottom: '120px'
+    paddingBottom: '120px',
   },
 });
 
 const Section = () => {
   return (
     <>
+    <Navbar />
       <Box className="background">
         <Stack direction={'row'} spacing={2} justifyContent={'space-between'}>
           <div className='container'>
-            <p className='main-text' style={{marginBottom: '60px'}}> We Are The Stallion Project</p>
-            <p className='age'>We create #new-age entrepreneur</p>
+            <p className='main-text' style={{marginBottom: '40px'}}> We Are</p>
+            <p className="main-text-two" style={{marginBottom: '60px'}}>The Stallion Project</p>
+            <p className='age'>We create #new-age entrepreneur's</p>
           </div>
 
           <Img
