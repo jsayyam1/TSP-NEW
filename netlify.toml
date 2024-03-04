@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"  # Specify your build command here
+  command = "CI= npm run build"  # Specify your build command here
   functions = "functions"    # Specify the directory where your functions are located
 
 
