@@ -9,7 +9,14 @@ const Payments = () => {
     const generateUpiQr = async () => {
         // Replace with your actual UPI identifier and API endpoint
         const apiUrl = '/api/generate-upi-qr';
+<<<<<<< Updated upstream
         const yourUpiIdentifier = '8850912626@kotak'; // Replace with your UPI identifier
+=======
+
+
+        //const yourUpiIdentifier = 'sunithaaravindan3@okhdfcbank'; // Replace with your UPI identifier
+        const yourUpiIdentifier = '8850912626@kotak';
+>>>>>>> Stashed changes
 
         try {
             const response = await fetch(apiUrl, {
