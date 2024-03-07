@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

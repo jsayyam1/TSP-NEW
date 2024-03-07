@@ -12,3 +12,6 @@
   from = "/api/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
+
+[[plugins]]
+package = "@xata.io/netlify"

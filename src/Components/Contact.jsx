@@ -9,31 +9,60 @@ import FB from '../Assets/FB ICON.png'
 import Linked from '../Assets/LINKEDIN ICON.png'
 import Brand from '../Assets/TSP Branding.png'
 import emailjs from '@emailjs/browser';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Contact = () => {
 
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_urygq98', 'template_5toihln', form.current, 'JhY339hk-jJGezTXP')
-        .then((result) => {
-            console.log(result.text);
-            window.location.href = <Link to={'/Services'}></Link>;
-            alert("Mail Submitted Successfully")
-        }, (error) => {
-            console.log(error.text);
-        });
+        e.preventDefault();
+
+        emailjs.sendForm('service_urygq98', 'template_5toihln', form.current, 'JhY339hk-jJGezTXP')
+            .then((result) => {
+                console.log(result.text);
+                alert("Mail Submitted Successfully");
+            }, (error) => {
+                console.log(error.text);
+            });
 
         emailjs.sendForm('service_urygq98', 'template_ok92hlu', form.current, 'JhY339hk-jJGezTXP')
-        .then((result) => {
-            console.log("Success");
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                console.log("Success");
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        // Capture form data
+        const formData = new FormData(form.current);
+        const contactData = {
+            name: formData.get('name'),
+            contact: formData.get('contact'),
+            email: formData.get('email'),
+            message: formData.get('message')
+        };
+
+        // Call Xata API to store user details
+        const apiKey = 'xau_qQBUEc2pCWVBgoSocmkZDBDvznuieNtb2'; // Replace 'YOUR_API_KEY' with your actual API key
+
+
+        axios.put('https://varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/Contact', contactData, {
+            headers: {
+                Authorization: `Bearer ${apiKey}`
+            }
+        })
+            .then((response) => {
+                console.log(response.data);
+                alert("User Details Saved Successfully");
+            })
+            .catch((error) => {
+                console.error("Error:", error.response);
+                alert("Failed to save user details");
+            });
+
     };
+
 
   return (
     <>
