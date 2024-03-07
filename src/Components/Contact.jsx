@@ -65,8 +65,16 @@ const Contact = () => {
                 alert("Failed to save user details");
             });
 
-
-
+        const mongoApiUrl = '/api/store-contact'; // Replace 'YOUR_MONGODB_API_URL' with your actual MongoDB API URL
+        axios.post(`${mongoApiUrl}`, contactData)
+            .then((response) => {
+                console.log(response.data);
+                alert("Contact Details Saved Successfully");
+            })
+            .catch((error) => {
+                console.error(error);
+                alert("Failed to save contact details");
+            });
 
 
     };

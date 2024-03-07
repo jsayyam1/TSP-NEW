@@ -112,6 +112,35 @@ app.post('/upi-payment-callback', async (req, res) => {
     }
 });
 
+app.post('/api/store-contact', async (req, res) => {
+    const { name, email, contact, message } = req.body;
+
+    try {
+        await client.connect(); // Connect to MongoDB
+        console.log('MongoDB connected'); // Add this line to log the connection
+
+        const database = client.db("thestallionproject");
+        const collection = database.collection("Contact");
+
+        const contactDetails = {
+            name,
+            email,
+            contact,
+            message,
+        };
+
+        await collection.insertOne(contactDetails);
+
+        res.json({ message: 'Contact details stored successfully.' });
+    } catch (error) {
+        console.error("Error storing contact details in MongoDB:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    } finally {
+        await client.close();
+    }
+});
+
+
 
 
 // Export a handler function for Netlify
