@@ -48,7 +48,8 @@ const Contact = () => {
         const apiKey = 'xau_qQBUEc2pCWVBgoSocmkZDBDvznuieNtb2'; // Replace 'YOUR_API_KEY' with your actual API key
         
         //const apiUrl = 'varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/branches/main/tables/Contact';
-        const apiUrl = 'https://Varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/branches/main/tables/Contact'; 
+       
+        const apiUrl = 'https://Varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW:main:Contact'; 
 
         axios.post(`${apiUrl}`, contactData, {
             headers: {
