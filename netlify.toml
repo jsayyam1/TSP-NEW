@@ -20,3 +20,5 @@ package = "@xata.io/netlify"
 for = "/*"
   [headers.values]
   Access-Control-Allow-Origin = "*"
+
+

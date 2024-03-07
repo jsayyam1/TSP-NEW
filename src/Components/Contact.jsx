@@ -43,15 +43,17 @@ const Contact = () => {
             message: formData.get('message')
         };
 
+
         // Call Xata API to store user details
         const apiKey = 'xau_qQBUEc2pCWVBgoSocmkZDBDvznuieNtb2'; // Replace 'YOUR_API_KEY' with your actual API key
-
         
+        //const apiUrl = 'varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/branches/main/tables/Contact';
+        const apiUrl = 'https://Varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/branches/main/tables/Contact'; 
 
-        axios.put('https://varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/Contact', contactData, {
+        axios.post(`${apiUrl}`, contactData, {
             headers: {
                 Authorization: `Bearer ${apiKey}`,
-                'Content-Type': 'application/json' // Add this if needed
+                'Content-Type': 'application/json'
             }
         })
             .then((response) => {
@@ -62,6 +64,10 @@ const Contact = () => {
                 console.error(error);
                 alert("Failed to save user details");
             });
+
+
+
+
 
     };
 
