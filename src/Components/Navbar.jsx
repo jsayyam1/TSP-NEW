@@ -63,6 +63,7 @@ const Navbar = () => {
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/DragonTalksPage'}><MenuItem>Dragon Talks</MenuItem></Link>
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/StockGyrationsPage'}><MenuItem>Stock Gyrations</MenuItem></Link>
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/MarketSavvyPage'}><MenuItem>Market Savvy</MenuItem></Link>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={'/TSPNetwork'}><Type component={"span"}>TSP Network</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/Contact'}><MenuItem>Contact Us</MenuItem></Link>
             </Menu>
 
