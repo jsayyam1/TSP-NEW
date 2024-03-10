@@ -41,6 +41,7 @@ const Navbar = () => {
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/DragonTalksPage'}><Type component={"span"}>Dragon Talks</Type></Link>
                 <Link style={{textDecoration: 'none' , color: 'white'}} to={'/StockGyrationsPage'}><Type component={"span"}>Stock Gyrations</Type></Link>
                 <Link style={{ textDecoration: 'none', color: 'white' }} to={'/MarketSavvyPage'}><Type component={"span"}>Market Savvy</Type></Link>
+                <Link style={{ textDecoration: 'none', color: 'white' }} to={'/TSPNetwork'}><Type component={"span"}>TSP Network</Type></Link>
                 <Link style={{ textDecoration: 'none', color: 'white' }} to={'/Payments'}><Type component={"span"}>Payments</Type></Link>
               </List>
               

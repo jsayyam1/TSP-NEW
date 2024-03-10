@@ -13,6 +13,7 @@ import StockGyrationsPage from './Components/StockGyrations';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
+import StallionNetwork from './Components/StallionNetwork';
 
 // Replace 'Measurement_Id' with your actual Measurement ID
 ReactGA.initialize('G-HLTBP4WRFD');
@@ -35,6 +36,7 @@ function App() {
             <Route path="/StockGyrationsPage" element={<StockGyrationsPage />} />
             <Route path="/MarketSavvyPage" element={<MarketSavvyPage />} />
             <Route path="/Payments" element={<Payments />} />
+            <Route path="/TSPNetwork" element={<StallionNetwork/>}/>
             <Route path="/Contact" element={<Contact />} />
           </Routes>
         </Stack>

@@ -1,0 +1,227 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2C1F4A;
+}
+
+header {
+    background-color: #2C1F4A;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: inline-block;
+    background-color: #3d2c63;
+    border-radius: 80px;
+    padding: 5px 5px;
+    box-shadow: 0 0 20px 5px black;
+    transition: box-shadow 0.3s ease;
+    border: 7px dotted black;
+}
+
+.logo-container img {
+    width: 150px;
+    height: 150px;
+    padding: 20px 20px;
+    border-radius: 1000px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.logo-container:hover {
+    box-shadow: 0 0 20px 5px white;
+}
+
+.logo-container:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.background-container-1,
+.background-container-2 {
+    background-color: #2C1F4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.content-container-1,
+.content-container-2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content-container-1 {
+    padding: 20px;
+}
+
+.content-container-1 h1 {
+    font-family: Sarala, sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.content-container-1 p {
+    font-family: "Blinker", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+#highlight {
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+
+.content-container-2 {
+    padding: 30px;
+}
+
+.content-container-2 h1 {
+    font-family: Sarala, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.content-container-2 p {
+    font-family: "Blinker", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.title h1 {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.quote-container-1 p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.quote-container p {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.button {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 20px 20px;
+    font-family: Sarala, sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: #5b438f;
+    border: 3px solid black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.button:hover {
+    background-color: #413066;
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 768px) {
+    .logo-container img {
+        width: 150px;
+         
+        height: 150px;
+         
+        padding: 10px 10px;
+         
+    }
+    .background-container-1,
+    .background-container-2 {
+        margin: 30px;
+         
+        margin-top: 40px;
+         
+        margin-bottom: 80px;
+         
+    }
+    .content-container-1,
+    .content-container-2 {
+        padding: 15px;
+    }
+
+    .content-container-1 h1 {
+        font-size: 1.7rem;
+         
+    }
+    #highlight {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .content-container-1 p,
+    .content-container-2 p {
+        font-size: 1rem;
+    }
+
+    .content-container-2 h1 {
+        font-size: 2rem;
+         
+    }
+
+    .quote-container p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 15px 15px;
+         
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo-container img {
+        width: 140px;
+         
+        height: 140px;
+         
+        padding: 5px 5px;
+         
+    }
+    .background-container-1,
+    .background-container-2 {
+        margin: 30px;
+         
+        margin-top: 30px;
+         
+        margin-bottom: 60px;
+         
+    }
+    .content-container-1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-container-2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 10px 10px;
+       
+    }
+}
