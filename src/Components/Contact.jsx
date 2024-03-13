@@ -49,22 +49,7 @@ const Contact = () => {
         
         //const apiUrl = 'varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW/branches/main/tables/Contact';
        
-        const apiUrl = 'https://Varrshinie123-s-workspace-4bofkc.eu-west-1.xata.sh/db/TSP-NEW:main:Contact'; 
-
-        axios.post(`${apiUrl}`, contactData, {
-            headers: {
-                Authorization: `Bearer ${apiKey}`,
-                'Content-Type': 'application/json'
-            }
-        })
-            .then((response) => {
-                console.log(response.data);
-                alert("User Details Saved Successfully");
-            })
-            .catch((error) => {
-                console.error(error);
-                alert("Failed to save user details");
-            });
+       
 
         const mongoApiUrl = '/api/store-contact'; // Replace 'YOUR_MONGODB_API_URL' with your actual MongoDB API URL
         axios.post(`${mongoApiUrl}`, contactData)
