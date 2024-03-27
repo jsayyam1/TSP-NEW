@@ -66,6 +66,22 @@ function Services() {
             </p>
           </div>
         </div>
+        <div className="service-card-big">
+          <h1>Data Science & Data Visualization</h1>
+          <p>
+            <b>Data Visulaization:</b> We are committed to using data to make educated decisions and promote corporate success.
+            <br /> <br />
+            <b>Data Exploration and Visualisation:</b> Using intuitive visualisations and exploratory analysis, you may uncover actionable insights hidden in your data.
+            <br /> <br />
+            <b>Statistical Analysis:</b> Use strong statistical approaches to draw valid conclusions and drive evidence-based solutions.
+            <br /> <br />
+            <b>Business Intelligence Solutions:</b> Use customised dashboards and reports to transform raw data into actionable intelligence based on your individual requirements.
+            <br /> <br />
+            <b>Data Cleaning And Preparation:</b> Use extensive cleaning and preprocessing processes to ensure that your data is accurate and reliable.
+            <br /> <br />
+            <b>Customized Solutions:</b> From recommendation systems to fraud detection algorithms, we create bespoke data science solutions that are suited to your specific business needs.
+          </p>
+        </div>
       </div>
     </>
   )
