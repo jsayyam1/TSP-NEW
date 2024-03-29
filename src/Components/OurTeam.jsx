@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import '../styles/ourteam.css'
-import img1 from '../Assets/IMG-20231228-WA0016.jpg'
-import img2 from '../Assets/Sayyam_Jain.jpg'
-import img3 from '../Assets/IMG-20231228-WA0017.jpg'
+import img1 from '../Assets/AT.jpg'
+import img2 from '../Assets/SJ.jpg'
+import img3 from '../Assets/YM.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'remixicon/fonts/remixicon.css'
@@ -18,7 +18,7 @@ function OurTeam() {
   <React.Fragment>
     <Navbar/>
 <section id="ourteam-container">
-    <h1 style={{color: 'black', textAlign: 'center', marginTop: '40px'}}>With pride, we unveil our formidable and goal-oriented team!</h1>
+    <h1 style={{color: 'black', textAlign: 'center', marginTop: '150px', marginBottom: '60px', marginRight : '70px',marginLeft : '70px'}}>With pride, we unveil our formidable and goal-oriented team !</h1>
 
     <div id="ourteam">
 
@@ -37,11 +37,11 @@ function OurTeam() {
                     enterprise with extensive expertise and a steadfast commitment to lasting success.
                 </p>
                 <div className='center'>
-                    <a href="https://www.instagram.com/avii.t?igsh=MTZhZ3pobm5mMmN1bQ==" style={{color: 'black'}}>
-                        <i className="ri-instagram-fill" style={{fontSize: 30, color: 'black'}}></i>
+                    <a href="https://www.instagram.com/avii.t?igsh=MTZhZ3pobm5mMmN1bQ==" target="_blank" style={{color: 'black'}}>
+                        <i className="ri-instagram-fill" style={{fontSize: 25, color: 'white'}}></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/avyay-tandon-a6a487219?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeQBSm4FzQwSjsLoNW0IZ8w%3D%3D" style={{color: 'black'}}>
-                        <i className="ri-linkedin-box-fill" style={{fontSize: 30, marginLeft: 10, color: 'black'}}></i>
+                    <a href="https://www.linkedin.com/in/avyay-tandon-a6a487219?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeQBSm4FzQwSjsLoNW0IZ8w%3D%3D" target="_blank" style={{color: 'black'}}>
+                        <i className="ri-linkedin-box-fill" style={{fontSize: 25, marginLeft: 10, color: 'white'}}></i>
                     </a>
                 </div>
             </div>
@@ -64,11 +64,11 @@ function OurTeam() {
                 </p>
             </div>
             <div className='center'>
-                <a href="https://www.instagram.com/jsay_yam24?igsh=a3kxb2FxNnVrMThi" style={{color: 'black'}}>
-                    <i className="ri-instagram-fill" style={{fontSize: 30}}></i>
+                <a href="https://www.instagram.com/jsay_yam24?igsh=a3kxb2FxNnVrMThi" target="_blank" style={{color: 'black'}}>
+                    <i className="ri-instagram-fill" style={{fontSize: 25, color: 'white'}}></i>
                 </a>
-                <a href="https://www.linkedin.com/in/sayyam-jain-29560321a" style={{color: 'black'}}>
-                    <i className="ri-linkedin-box-fill" style={{fontSize: 30, marginLeft: 10}}></i>
+                <a href="https://www.linkedin.com/in/sayyam-jain-29560321a" target="_blank" style={{color: 'black'}}>
+                    <i className="ri-linkedin-box-fill" style={{fontSize: 25, marginLeft: 10, color: 'white'}}></i>
                 </a>
             </div>
         </div>
@@ -89,11 +89,11 @@ function OurTeam() {
                     and adaptability. Let's collaborate for innovation and growth!</p>
             </div>
             <div className='center'>
-                <a href="https://www.instagram.com/thebokaguy?igsh=MmZoYjNucHU3YWNj" style={{color: 'black'}}>
-                    <i className="ri-instagram-fill" style={{fontSize: 30}}></i>
+                <a href="https://www.instagram.com/thebokaguy?igsh=MmZoYjNucHU3YWNj" target="_blank" style={{color: 'black'}}>
+                    <i className="ri-instagram-fill" style={{fontSize: 25, color: 'white'}}></i>
                 </a>
-                <a href="https://www.linkedin.com/in/yashmitra?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsTcwCGgfTMOGoMhuTD5eag%3D%3D" style={{color: 'black'}}>
-                    <i className="ri-linkedin-box-fill" style={{fontSize: 30, marginLeft: 10}}></i>
+                <a href="https://www.linkedin.com/in/yashmitra?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsTcwCGgfTMOGoMhuTD5eag%3D%3D" target="_blank" style={{color: 'black'}}>
+                    <i className="ri-linkedin-box-fill" style={{fontSize: 25, marginLeft: 10, color: 'white'}}></i>
                 </a>
             </div>
         </div>

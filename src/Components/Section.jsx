@@ -16,14 +16,22 @@ const Img = styled(TiltedImg)({
   top: 280,
   right: '200px',
   height: '440px', 
-  width: '440px',  
-
+  width: '440px', 
+  '@media (max-width: 1340px)': {
+    width: '250px', 
+    height: '250px',
+  }, 
+  '@media (max-width: 1032px)': {
+    width: '0px', 
+    height: '0px',
+  }, 
   '@media (max-width: 768px)': {
-    top: 500,
+    top: 560,
     right: '0px',
     width: '250px', 
     height: '250px',
     left: -540,
+
   },
 });
 
@@ -46,15 +54,27 @@ const Fielder = styled('fieldset')({
   padding: '20px',
   marginTop: '30px',
   marginLeft: '75px',
-  '@media (max-width: 720px)': {
+  marginBottom:'50px',
+  '@media (max-width: 768px)': {
     flexDirection: 'column',
     width: '300px',
     justifyContent: 'center',
     gap: '1.2rem',
     alignItems: 'center',
     left: '-50px',
-    top: '230px',
-    paddingBottom: '120px',
+    top: '200px',
+    paddingBottom: '30px',
+    marginTop:'50px',
+    marginBottom:'90px',
+    transform:'translateX(15%)',
+  },
+  '@media (max-width: 720px)': {
+    transform:'translateX(10%)',
+    marginBottom:'90px',
+  },
+  '@media (max-width: 592px)': {
+    transform:'translateX(10%)',
+    marginBottom:'90px',
   },
 });
 
@@ -67,7 +87,7 @@ const Section = () => {
           <div className='container'>
             <p className='main-text' style={{marginBottom: '40px'}}> We Are</p>
             <p className="main-text-two" style={{marginBottom: '60px'}}>The Stallion Project</p>
-            <p className='age'>We create #new-age entrepreneur's</p>
+            <p className='age'>We create the #new-age entrepreneurs!</p>
           </div>
 
           <Img
@@ -76,6 +96,7 @@ const Section = () => {
             whileHover="hover"
             variants={tiltAnimation}
             transition={{ ease: 'easeOut', duration: 0.3 }}
+            style={{marginRight:'-120px'}}
           />
         </Stack>
 
@@ -88,7 +109,7 @@ const Section = () => {
               bgcolor: 'white',
               borderRadius: '50px',
               height: '65px',
-              width: { xs: '370px', sm: '600px' },
+              width: { xs: '380px', sm: '380px', md: '590px', lg: '590px' }, // Adjusted for lg breakpoint
               padding: '20px',
             }}
             endAdornment={
@@ -107,18 +128,19 @@ const Section = () => {
             }
             placeholder='What do you want to find'
             disableUnderline
-          ></Input>
+          />
         </div>
+
 
         <Fielder>
           <legend style={{ color: 'white' }}>Our Companies</legend>
-          <a href="#">
+          <a href='/MarketSavvyPage'>
             <img src={Savvy} alt="" />
           </a>
-          <a href="#">
+          <a href='/StockGyrationsPage'>
             <img src={Stock} alt="" />
           </a>
-          <a href="#">
+          <a href='/DragonTalksPage'>
             <img src={Dragon} alt="" />
           </a>
         </Fielder>
