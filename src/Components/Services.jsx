@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 import '../styles/style.css'
 import aboutimg from '../Assets/image-removebg-preview (3) 1.png'
+import client1 from '../Assets/Full Version.png'
+import client2 from '../Assets/PNG Logo.png'
+import client3 from '../Assets/Ayka Final Logo-Black Text.png'
+import client4 from '../Assets/WhatsApp_Image_2024-03-26_at_21.01.10-removebg-preview.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,7 +39,7 @@ function Services() {
         </div>
 
         <div data-aos="fade-bottom">
-          <h1>Our Services</h1> 
+          <h2>Our Services</h2> 
         </div>
         <div className='ourservices-grid'>
           <div className='service-card' data-aos="flip-right">
@@ -66,7 +70,7 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="service-card-big">
+        <div className="service-card-big" data-aos="fade-up">
           <h1>Data Science & Data Visualization</h1>
           <p>
             <b>Data Visulaization:</b> We are committed to using data to make educated decisions and promote corporate success.
@@ -81,6 +85,15 @@ function Services() {
             <br /> <br />
             <b>Customized Solutions:</b> From recommendation systems to fraud detection algorithms, we create bespoke data science solutions that are suited to your specific business needs.
           </p>
+        </div>
+        <div data-aos="fade-bottom">
+          <h2>Our Clients</h2> 
+        </div>
+        <div className="client-grid">
+            <img src={client1} alt="" className="image" data-aos="fade-up" />
+            <img src={client2} alt="" className="image2" data-aos="fade-up" />
+            <img src={client3} alt="" className="image3" data-aos="fade-up" />
+            <img src={client4} alt="" className='image4' data-aos="fade-up" />
         </div>
       </div>
     </>

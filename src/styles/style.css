@@ -91,9 +91,11 @@
   overflow-x: hidden; 
 }
 
-.aboutus-section h1 {
+.aboutus-section h2 {
   text-align: center;
   font-size: 60px;
+  color: black;
+  margin-top: 10px;
 }
 
 .aboutus-grid {
@@ -218,5 +220,52 @@
   
   .service-card-big h1 {
     font-size: 28px;
+  }
+}
+
+
+/* our clients */
+.client-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+.client-grid .image,
+.client-grid .image2,
+.client-grid .image3,
+.client-grid .image4 {
+  width: 100%; 
+  height: auto; 
+}
+
+@media (min-width: 768px) {
+  .client-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 60px;
+  }
+
+  .client-grid .image {
+    width: 250px;
+    height: 200px;
+  }
+
+  .client-grid .image2 {
+    width: 450px;
+    height: 120px;
+  }
+
+  .client-grid .image3 {
+    width: 300px;
+    height: 150px;
+  }
+
+  .client-grid .image4 {
+    width: 250px;
+    height: 180px;
   }
 }
