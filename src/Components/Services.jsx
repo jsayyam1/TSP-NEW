@@ -92,6 +92,8 @@ function Services() {
         <div className="client-grid">
             <img src={client1} alt="" className="image" data-aos="fade-up" />
             <img src={client2} alt="" className="image2" data-aos="fade-up" />
+        </div>
+        <div className="client-grid">
             <img src={client3} alt="" className="image3" data-aos="fade-up" />
             <img src={client4} alt="" className='image4' data-aos="fade-up" />
         </div>

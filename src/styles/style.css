@@ -250,6 +250,7 @@
 .client-grid .image4 {
   width: 100%; 
   height: auto; 
+  margin-left: 140px;
 }
 
 @media (min-width: 768px) {
