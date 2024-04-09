@@ -5,10 +5,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Logo from "../Assets/TSP Logo.jpg"
 import { Link } from 'react-router-dom';
 
+const StyledAppBar = styled(AppBar)({
+  backgroundColor: "#3F0844",
+  boxShadow: "100px",
+})
+
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
-  backgroundColor: "#3f0844",
   height: "100px"
 })
 
@@ -27,11 +31,11 @@ const Type = styled(Typography)({
 
 const Navbar = () => {
   
-  const[open,setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
 
   return (
     <>
-        <AppBar>
+        <StyledAppBar>
             <StyledToolbar>
               <Avatar sx={{height:"60px" , width:"60px"}} src={Logo} />
 
@@ -45,7 +49,7 @@ const Navbar = () => {
                 <Link style={{ textDecoration: 'none', color: 'white' }} to={'/Payments'}><Type component={"span"}>Payments</Type></Link>
               </List>
               
-              <Link style={{textDecoration: 'none'}} to={'/Contact'}><Button sx={{padding: "10px 30px" , borderRadius: "10px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"} , ":hover": {fontSize: '15px',transition: '0.3s',}}} variant='contained'>Contact Us</Button></Link>
+              <Link style={{textDecoration: 'none'}} to={'/Contact'}><Button sx={{padding: "10px 30px" , borderRadius: "15px" , backgroundColor: "#2c1f4a" , display:{xs:"none" , sm: "block"} , ":hover": {fontSize: '15px',transition: '0.3s',}}} variant='contained'>Contact Us</Button></Link>
               <MenuIcon sx={{display:{xs:"block" , sm:"none"}}} onClick={()=> setOpen(true)}/>
             </StyledToolbar>
             
@@ -63,11 +67,11 @@ const Navbar = () => {
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/DragonTalksPage'}><MenuItem>Dragon Talks</MenuItem></Link>
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/StockGyrationsPage'}><MenuItem>Stock Gyrations</MenuItem></Link>
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/MarketSavvyPage'}><MenuItem>Market Savvy</MenuItem></Link>
-                <Link style={{ textDecoration: 'none', color: 'white' }} to={'/TSPNetwork'}><MenuItem>TSP Network</MenuItem></Link>
+                <Link style={{ textDecoration: 'none', color: 'black' }} to={'/TSPNetwork'}><MenuItem>TSP Network</MenuItem></Link>
                 <Link style={{textDecoration: 'none' , color: 'black'}} to={'/Contact'}><MenuItem>Contact Us</MenuItem></Link>
             </Menu>
 
-        </AppBar>
+        </StyledAppBar>
     </>
   )
 }
