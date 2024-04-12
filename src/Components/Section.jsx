@@ -132,7 +132,7 @@ const Section = () => {
         </div>
 
 
-        <Fielder>
+        {/* <Fielder>
           <legend style={{ color: 'white' }}>Our Companies</legend>
           <a href='/MarketSavvyPage'>
             <img src={Savvy} alt="" />
@@ -143,7 +143,7 @@ const Section = () => {
           <a href='/DragonTalksPage'>
             <img src={Dragon} alt="" />
           </a>
-        </Fielder>
+        </Fielder> */}
       </Box>
     </>
   );

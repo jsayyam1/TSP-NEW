@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '../styles/style.css'
-import aboutimg from '../Assets/image-removebg-preview (3) 1.png'
+import aboutimg from '../Assets/image 22 (Custom).png'
 import client1 from '../Assets/Full Version.png'
 import client2 from '../Assets/PNG Logo.png'
 import client3 from '../Assets/Ayka Final Logo-Black Text.png'
@@ -52,7 +52,7 @@ function Services() {
             </p>
           </div>
           <div className='service-card' data-aos="flip-right">
-            <h1>Incubation Space</h1>
+            <h1 align="center">Incubation In Services</h1>
             <p>
               Championing innovation, we extend incubation space to nascent startups. Acknowledging the potential for reciprocal growth, 
               we furnish not only physical infrastructure but also invest in our clients' ventures, fostering a partnership that transcends 
@@ -71,7 +71,7 @@ function Services() {
           </div>
         </div>
         <div className="service-card-big" data-aos="fade-up">
-          <h1>Data Science & Data Visualization</h1>
+          <h1 align="center">Data Science & Data Visualization</h1>
           <p>
             <b>Data Visulaization:</b> We are committed to using data to make educated decisions and promote corporate success.
             <br /> <br />
